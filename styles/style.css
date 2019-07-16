@@ -1,0 +1,189 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  margin: 0px 0 0 0;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+header {
+  position: relative;
+  z-index: 30;
+}
+header .logo {
+  float: left;
+  margin-top: 40px;
+  margin-left: 5%;
+}
+header .desktopNav {
+  font-family: "Source Sans Pro", sans-serif;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #6d6e70;
+  float: right;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+header .desktopNav ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 10px auto;
+  list-style: none;
+}
+header .desktopNav li {
+  color: #6d6e70;
+  margin: 0px 25px;
+}
+header .desktopNav .contact {
+  color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2a900;
+  border-radius: 17px;
+  height: 40px;
+  width: 150px;
+  margin-top: -8px;
+}
+
+.home {
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  min-width: 400px;
+  max-width: 100vw;
+  display: flex;
+  height: 100vh;
+}
+.home .containerBox {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  height: 100vh;
+  width: 55%;
+  margin-top: -8%;
+  position: relative;
+  z-index: 20;
+}
+.home .containerBox .abstract {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 30px;
+  width: 474px;
+  position: absolute;
+  top: 23%;
+  left: 15%;
+}
+.home .containerBox .abstract .bold {
+  font-weight: bold;
+}
+.home .containerBox .homeForm {
+  width: 350px;
+  position: absolute;
+  top: 45%;
+  left: 15%;
+}
+.home .containerBox .homeForm label {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #6d6e70;
+}
+.home .containerBox .homeForm label input {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #6d6e70;
+  font-size: 15px;
+  border-radius: 8px;
+  width: 315px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .containerBox .homeForm input {
+  border-bottom: 2px solid #f2f2f2;
+  border-radius: 6px;
+  margin-top: 2%;
+}
+.home .containerBox .homeForm p {
+  font-size: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #6d6e70;
+  margin-top: -5%;
+  margin-left: 7%;
+  width: 380px;
+}
+.home .containerBox .homeForm p .bold {
+  font-weight: bold;
+}
+.home .containerBox .primary-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6d6e70;
+  border-bottom: 1px solid #6d6e70;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-size: 20px;
+  border-radius: 45px;
+  height: 40px;
+  width: 256px;
+  margin-top: 5%;
+}
+.home .containerBox .title {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #f2a900;
+  font-size: 300%;
+  font-weight: bold;
+  width: 600px;
+  float: left;
+  margin-top: 64%;
+  margin-left: 15%;
+  position: relative;
+  z-index: 70;
+}
+.home .containerBox .miscelanea {
+  margin-left: -97%;
+}
+.home .medium-content {
+  position: relative;
+  z-index: 40;
+  margin-left: -8%;
+}
+.home .medium-content iframe {
+  width: 250%;
+  height: 75vh;
+}
+
+.mailchimp {
+  margin: -300px 0px 0px 0px;
+  position: absolute;
+  z-index: 80;
+  background-color: #f2a90096;
+  height: 100vh;
+  width: 100vw;
+  padding: 500px;
+  transition: 0.1s;
+}
+
+/*# sourceMappingURL=style.css.map */
