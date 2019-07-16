@@ -91,7 +91,7 @@ header .desktopNav .contact {
   font-family: "Source Sans Pro", sans-serif;
   width: 513px;
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 23%;
   display: flex;
   align-content: space-evenly;
@@ -166,28 +166,30 @@ header .desktopNav .contact {
 .home .containerBox .title {
   font-family: "Source Sans Pro", sans-serif;
   color: #f2a900;
-  font-size: 77px;
+  font-size: 65px;
   font-weight: bold;
-  position: relative;
-  z-index: 70;
+  position: absolute;
   margin-left: 23%;
-  width: 730px;
+  width: 844px;
+  margin-top: 58%;
+  z-index: 100;
 }
 .home .containerBox .miscelanea {
-  background-image: url(../assets/Img/miscOrange-09.svg);
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: -90%;
+  margin-top: 75%;
+  margin-left: -130%;
 }
 
 .medium-content {
+  max-width: 700px;
+  min-width: 400px;
   position: relative;
-  z-index: 40;
-  margin-left: -8%;
+  z-index: 20;
+  float: right;
+  margin-right: 25%;
+  margin-top: -40%;
 }
 .medium-content iframe {
-  width: 250%;
+  width: 220%;
   height: 75vh;
 }
 
