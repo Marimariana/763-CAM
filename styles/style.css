@@ -72,105 +72,121 @@ header .desktopNav .contact {
 }
 
 .home {
-  margin: 0px 0px 0px 0px;
   width: 100%;
   min-width: 400px;
   max-width: 100vw;
   display: flex;
   height: 100vh;
+  display: unset;
 }
 .home .containerBox {
   background-color: #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
   height: 100vh;
   width: 55%;
-  margin-top: -8%;
   position: relative;
   z-index: 20;
 }
-.home .containerBox .abstract {
+.home .containerBox .medium-form {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 30px;
-  width: 474px;
+  width: 513px;
   position: absolute;
-  top: 23%;
-  left: 15%;
+  top: 20%;
+  left: 23%;
+  display: flex;
+  align-content: space-evenly;
 }
-.home .containerBox .abstract .bold {
+.home .containerBox .medium-form .abstract {
+  font-size: 38px;
+  position: absolute;
+}
+.home .containerBox .medium-form .abstract .bold {
   font-weight: bold;
 }
-.home .containerBox .homeForm {
-  width: 350px;
-  position: absolute;
-  top: 45%;
-  left: 15%;
+.home .containerBox .medium-form form {
+  margin-top: 35%;
+  font-size: 19px;
 }
-.home .containerBox .homeForm label {
-  background-color: #f2f2f2;
-  border-bottom: 1px solid #6d6e70;
-}
-.home .containerBox .homeForm label input {
+.home .containerBox .medium-form form input.requiredEmail {
   font-family: "Source Sans Pro", sans-serif;
-  color: #6d6e70;
-  font-size: 15px;
-  border-radius: 8px;
-  width: 315px;
-  height: 25px;
+  color: #f2f2f2;
+  font-size: 20px;
+  border-radius: 20px;
+  width: 377px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
-.home .containerBox .homeForm input {
-  border-bottom: 2px solid #f2f2f2;
-  border-radius: 6px;
-  margin-top: 2%;
+.home .containerBox .medium-form form .checkboxBox {
+  display: flex;
+  align-content: space-between;
+  margin-top: 15px;
 }
-.home .containerBox .homeForm p {
-  font-size: 15px;
+.home .containerBox .medium-form form .checkboxBox p {
+  margin-left: 12px;
   font-family: "Source Sans Pro", sans-serif;
   color: #6d6e70;
-  margin-top: -5%;
-  margin-left: 7%;
-  width: 380px;
+  font-size: 19px;
 }
-.home .containerBox .homeForm p .bold {
+.home .containerBox .medium-form form .checkboxBox p .bold {
   font-weight: bold;
 }
-.home .containerBox .primary-btn {
+.home .containerBox .medium-form form .btnSet {
+  margin-top: 40px;
+}
+.home .containerBox .medium-form form .btnSet .button-mailchimp {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #6d6e70;
-  border-bottom: 1px solid #6d6e70;
+  border: 2px solid #6d6e70;
   font-family: "Source Sans Pro", sans-serif;
   color: white;
   font-size: 20px;
   border-radius: 45px;
   height: 40px;
   width: 256px;
-  margin-top: 5%;
+  height: 35px;
+}
+.home .containerBox .medium-form form .btnSet .primary-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6d6e70;
+  border: 2px solid #6d6e70;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-size: 20px;
+  border-radius: 45px;
+  height: 40px;
+  width: 256px;
 }
 .home .containerBox .title {
   font-family: "Source Sans Pro", sans-serif;
   color: #f2a900;
-  font-size: 300%;
+  font-size: 77px;
   font-weight: bold;
-  width: 600px;
-  float: left;
-  margin-top: 64%;
-  margin-left: 15%;
   position: relative;
   z-index: 70;
+  margin-left: 23%;
+  width: 730px;
 }
 .home .containerBox .miscelanea {
-  margin-left: -97%;
+  background-image: url(../assets/Img/miscOrange-09.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -90%;
 }
-.home .medium-content {
+
+.medium-content {
   position: relative;
   z-index: 40;
   margin-left: -8%;
 }
-.home .medium-content iframe {
+.medium-content iframe {
   width: 250%;
   height: 75vh;
 }
