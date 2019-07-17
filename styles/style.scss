@@ -32,12 +32,19 @@ time, mark, audio, video {
     height: 40px;
     width: 256px;
 }
+@mixin inputForm {
+    border: 1px solid #c5c5c5;
+    border-radius: 20px;
+    height: 35px;
+    width: 230px;
+}
 //parametros
 $font-family:'Source Sans Pro', sans-serif;
 $white-color: #f2f2f2;
 $yellow-color: #f2a900;
 $grey-color: #6d6e70;
-
+//Media
+$break-laptop: 1200px;
 body {
     margin: 0px 0 0 0;
 }
@@ -94,6 +101,7 @@ header {
     display: flex;
     height: 100vh;
     display: unset;
+
         .containerBox {
                 background-color: #f2f2f2;
                 border-bottom: 1px solid #f2f2f2;
@@ -199,7 +207,10 @@ header {
                     width: 1100px;
                     margin: 7.75rem auto;
                     pointer-events: none;
-                }
+                      @media (min-width: 576px) {
+                       max-width: 1100px; }
+                    }
+               
                 .modal-content {
                     position: relative;
                     width: 1100px;
@@ -213,24 +224,95 @@ header {
                     outline: 0;
                     .button {
                         @include btnPrimary();
-                    }
-                    .inlineForm {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 10px;
-                    }
-                    .columnForm {
                         display: flex;
                         flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 10px;
+                        align-content: center;
+                    }
+                    input {
+                        @include inputForm;
+                    }
+                    select {
+                        @include inputForm();
                     }
                     label {
                         font-family: $font-family;
                         color: $grey-color;
                         font-size: 16px;
+                        margin-bottom: 8px;
+                        font-weight: 400;
                     }
+                    .mc-field-group {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                    .mc-field-group-legal {
+                        display: flex;
+                        flex-direction: row;
+                        align-content: space-between;
+                        margin: 5px auto 5px;
+                        .checkbox {
+                            border: 1px solid #f1f1f1;
+                            border-radius: 4px;
+                            margin: 3px 3px;
+                            list-style-type: none;
+                            height: 15px;
+                            width: 15px;
+                        }
+                        p {
+                            margin: 3px 6px 3px 6px;
+                            font-family: $font-family;
+                            color: $grey-color;
+                        }
+                    }
+
+                    .inlineForm {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: baseline;
+                        padding: 10px;
+                    }
+                    .secondSectionForm {
+                        display: flex;
+                        justify-content: center;
+                        margin: 20px auto 20px;
+                        border-top: 1px solid #d4d1d19c;
+                    }
+                    .columnForm {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: flex-start;
+                        padding: 10px;
+                        margin-top: 10px;
+                        max-width: 509px;
+                        .sectionBtn {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: baseline;
+                            padding: 10px;
+                            button {
+                            @include inputForm();
+                            border: 1px solid #c5c5c5;
+                            border-radius: 25px;
+                            height: 40px;
+                            width: 55px;
+                            background-color: white;
+                            font-family: $font-family;
+                            color: grey;
+                            margin: 0 10px 0 0;
+                            }
+                            input {
+                                padding-left: 15px;
+                            }
+                        }
+                        
+                    }
+                    .clear {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    
                 }

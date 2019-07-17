@@ -203,6 +203,11 @@ header .desktopNav .contact {
   margin: 7.75rem auto;
   pointer-events: none;
 }
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 1100px;
+  }
+}
 
 .modal-content {
   position: relative;
@@ -228,25 +233,102 @@ header .desktopNav .contact {
   border-radius: 45px;
   height: 40px;
   width: 256px;
-}
-.modal-content .inlineForm {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-.modal-content .columnForm {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+  align-content: center;
+}
+.modal-content input {
+  border: 1px solid #c5c5c5;
+  border-radius: 20px;
+  height: 35px;
+  width: 230px;
+}
+.modal-content select {
+  border: 1px solid #c5c5c5;
+  border-radius: 20px;
+  height: 35px;
+  width: 230px;
 }
 .modal-content label {
   font-family: "Source Sans Pro", sans-serif;
   color: #6d6e70;
   font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+.modal-content .mc-field-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.modal-content .mc-field-group-legal {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  margin: 5px auto 5px;
+}
+.modal-content .mc-field-group-legal .checkbox {
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  margin: 3px 3px;
+  list-style-type: none;
+  height: 15px;
+  width: 15px;
+}
+.modal-content .mc-field-group-legal p {
+  margin: 3px 6px 3px 6px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #6d6e70;
+}
+.modal-content .inlineForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10px;
+}
+.modal-content .secondSectionForm {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 20px;
+  border-top: 1px solid #d4d1d19c;
+}
+.modal-content .columnForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px;
+  margin-top: 10px;
+  max-width: 509px;
+}
+.modal-content .columnForm .sectionBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10px;
+}
+.modal-content .columnForm .sectionBtn button {
+  border: 1px solid #c5c5c5;
+  border-radius: 20px;
+  height: 35px;
+  width: 230px;
+  border: 1px solid #c5c5c5;
+  border-radius: 25px;
+  height: 40px;
+  width: 55px;
+  background-color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  color: grey;
+  margin: 0 10px 0 0;
+}
+.modal-content .columnForm .sectionBtn input {
+  padding-left: 15px;
+}
+.modal-content .clear {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
