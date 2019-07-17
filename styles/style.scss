@@ -202,7 +202,7 @@ header {
                 }
                 .modal-content {
                     position: relative;
-                    width: 100%;
+                    width: 1100px;
                     pointer-events: auto;
                     background-color: white;
                     padding:45px;
@@ -217,7 +217,16 @@ header {
                     .inlineForm {
                         display: flex;
                         flex-direction: row;
-                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px;
+                    }
+                    .columnForm {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px;
                     }
                     label {
                         font-family: $font-family;
