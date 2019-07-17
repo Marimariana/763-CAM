@@ -180,7 +180,7 @@ header {
                 max-width: 700px;
                 min-width: 400px;
                 position: relative;
-                z-index: 20;
+                z-index: 10;
                 float: right;
                 margin-right: 25%;
                 margin-top: -40%;
@@ -188,15 +188,40 @@ header {
                     width: 220%;
                     height: 75vh;
                     }
-                }
+             }
+         
             
-    .mailchimp {
-        margin: -300px 0px 0px 0px;
-        position: absolute;
-        z-index: 80;
-        background-color: #f2a90096;
-        height: 100vh;
-        width: 100vw;
-        padding: 500px;
-        transition: 0.1s;
-    }
+                .modal-backdrop {
+                    background-color: #f9b133; 
+                }
+                .modal-dialog {
+                    position: relative;
+                    width: 1100px;
+                    margin: 7.75rem auto;
+                    pointer-events: none;
+                }
+                .modal-content {
+                    position: relative;
+                    width: 100%;
+                    pointer-events: auto;
+                    background-color: white;
+                    padding:45px;
+                    border: 8px solid white;
+                    border-radius: 0.4rem;
+                    box-shadow: 2px;
+                    box-shadow: 15px 15px #5252523b;
+                    outline: 0;
+                    .button {
+                        @include btnPrimary();
+                    }
+                    .inlineForm {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                    }
+                    label {
+                        font-family: $font-family;
+                        color: $grey-color;
+                        font-size: 16px;
+                    }
+                }
