@@ -29,7 +29,7 @@ body {
   padding: 0px;
   margin: 0px 0px 0px 0px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .container {
     display: flex;
     justify-content: space-between;
@@ -45,7 +45,7 @@ header {
   position: relative;
   z-index: 30;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   header {
     margin: 64px 0px 0px 50px;
     width: 0vw;
@@ -56,7 +56,7 @@ header .logo {
   margin-top: 20vh;
   margin-left: 5%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   header .logo {
     margin-top: 5vh;
     margin-left: 5%;
@@ -72,7 +72,12 @@ header .desktopNav {
   margin-top: 20vh;
   margin-right: 5vh;
 }
-@media screen and (max-width: 480px) {
+@media only screen and (min-width: 1100px) {
+  header .desktopNav {
+    font-size: 140%;
+  }
+}
+@media screen and (max-width: 600px) {
   header .desktopNav {
     display: none;
   }
@@ -115,7 +120,7 @@ header .desktopNav .contact {
   height: 100vh;
   display: unset;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .home {
     width: 100%;
     height: 100vh;
@@ -130,7 +135,7 @@ header .desktopNav .contact {
   position: relative;
   z-index: 20;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .home .containerBox {
     width: 255%;
     height: 165vh;
@@ -139,14 +144,14 @@ header .desktopNav .contact {
 }
 .home .containerBox .medium-form {
   font-family: "Source Sans Pro", sans-serif;
-  width: 78%;
+  width: 56%;
   position: absolute;
   top: 20%;
-  left: 15vh;
+  left: 20vh;
   display: flex;
   align-content: space-evenly;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .home .containerBox .medium-form {
     top: 16%;
     left: 16vh;
@@ -160,7 +165,7 @@ header .desktopNav .contact {
 .home .containerBox .medium-form .abstract .bold {
   font-weight: bold;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .home .containerBox .medium-form .abstract {
     top: 190vh;
     right: 5%;
@@ -169,12 +174,22 @@ header .desktopNav .contact {
     text-align: center;
   }
 }
+@media only screen and (min-width: 1100px) {
+  .home .containerBox .medium-form .abstract {
+    font-size: 250%;
+  }
+}
 .home .containerBox .medium-form form {
   margin-top: 17vh;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .home .containerBox .medium-form form {
     margin-top: 140vh;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .home .containerBox .medium-form form {
+    margin-top: 16vh;
   }
 }
 .home .containerBox .medium-form form input.requiredEmail {
@@ -190,7 +205,7 @@ header .desktopNav .contact {
   align-items: center;
   padding: 4%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .home .containerBox .medium-form form input.requiredEmail {
     top: 90%;
     position: absolute;
@@ -201,12 +216,19 @@ header .desktopNav .contact {
     padding: 30px;
   }
 }
+@media only screen and (min-width: 1100px) {
+  .home .containerBox .medium-form form input.requiredEmail {
+    width: 75%;
+    height: 47px;
+    padding: 3%;
+  }
+}
 .home .containerBox .medium-form form .checkboxBox {
   display: flex;
   align-content: space-between;
   margin-top: 3vh;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .home .containerBox .medium-form form .checkboxBox {
     margin-top: 0px;
     position: absolute;
@@ -215,13 +237,16 @@ header .desktopNav .contact {
     width: 86vh;
   }
 }
+.home .containerBox .medium-form form .checkboxBox input.checkbox {
+  height: 2vh;
+}
 .home .containerBox .medium-form form .checkboxBox p {
   margin-left: 12px;
   font-family: "Source Sans Pro", sans-serif;
   color: #6d6e70;
   font-size: 15px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .home .containerBox .medium-form form .checkboxBox p {
     font-size: 115%;
   }
@@ -231,6 +256,11 @@ header .desktopNav .contact {
 }
 .home .containerBox .medium-form form .btnSet {
   margin-top: 5vh;
+}
+@media only screen and (min-width: 1100px) {
+  .home .containerBox .medium-form form .btnSet {
+    margin-top: 3vh;
+  }
 }
 .home .containerBox .medium-form form .btnSet .button-mailchimp {
   display: flex;
@@ -246,7 +276,7 @@ header .desktopNav .contact {
   width: 256px;
   height: 35px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .home .containerBox .medium-form form .btnSet .button-mailchimp {
     height: 55px;
     width: 100vh;
@@ -257,7 +287,7 @@ header .desktopNav .contact {
   background-color: #f2a900;
   transition: ease-in 0.2s;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .home .containerBox .medium-form form .btnSet .button-mailchimp {
     width: 50vh;
     height: 40px;
@@ -276,7 +306,7 @@ header .desktopNav .contact {
   height: 40px;
   width: 256px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .home .containerBox .medium-form form .btnSet .primary-btn {
     height: 55px;
     width: 100vh;
@@ -287,7 +317,7 @@ header .desktopNav .contact {
   background-color: #f2a900;
   transition: ease-in 0.2s;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .home .containerBox .medium-form form .btnSet .primary-btn {
     width: 100vh;
     margin-top: 107vh;
@@ -305,7 +335,7 @@ header .desktopNav .contact {
   margin-top: 67vh;
   z-index: 100;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .home .containerBox .title {
     font-size: 425%;
     position: absolute;
@@ -315,15 +345,27 @@ header .desktopNav .contact {
     margin-top: 85%;
   }
 }
+@media only screen and (min-width: 1100px) {
+  .home .containerBox .title {
+    font-size: 435%;
+    margin-left: 14%;
+    margin-top: 69vh;
+  }
+}
 .home .containerBox .miscelanea {
   margin-top: 85vh;
   margin-left: -105vh;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .home .containerBox .miscelanea {
     margin-top: 104%;
     margin-left: -65%;
     width: 100%;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .home .containerBox .miscelanea {
+    margin-left: -80vh;
   }
 }
 
@@ -336,18 +378,23 @@ header .desktopNav .contact {
   margin-right: 20%;
   margin-top: -83vh;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .medium-content {
     margin-right: 12%;
     margin-top: -144vh;
     z-index: 20;
   }
 }
+@media only screen and (min-width: 1100px) {
+  .medium-content {
+    margin-right: 24%;
+  }
+}
 .medium-content iframe {
   width: 220%;
   height: 75vh;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .medium-content iframe {
     width: 250%;
     height: 90vh;
@@ -398,7 +445,7 @@ header .desktopNav .contact {
   flex-direction: column;
   align-content: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .modal-content .button {
     height: 55px;
     width: 100vh;
@@ -441,7 +488,7 @@ header .desktopNav .contact {
   flex-direction: column;
   align-items: flex-start;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .modal-content .mc-field-group {
     position: absolute;
     top: 230%;
@@ -546,6 +593,11 @@ header .desktopNav .contact {
   width: 75%;
   float: right;
 }
+@media only screen and (min-width: 1100px) {
+  .secondSection .whatIs {
+    width: 65%;
+  }
+}
 .secondSection .whatIs h3 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 375%;
@@ -564,6 +616,11 @@ header .desktopNav .contact {
   position: absolute;
   top: 50vh;
   right: -5vh;
+}
+@media only screen and (min-width: 1100px) {
+  .secondSection .whatIs img.miscelanea {
+    right: -7vh;
+  }
 }
 
 .thirdSection {
@@ -644,6 +701,11 @@ header .desktopNav .contact {
   position: absolute;
   margin-top: 25vh;
 }
+@media only screen and (min-width: 1100px) {
+  .thirdSection .howDoes .reason {
+    margin-top: 23vh;
+  }
+}
 .thirdSection .howDoes .reason h4 {
   font-family: "Source Sans Pro", sans-serif;
   color: #6d6e70;
@@ -660,6 +722,12 @@ header .desktopNav .contact {
 .thirdSection .howDoes .reason h4 .italic {
   color: #f2a900;
   font-style: oblique;
+}
+@media only screen and (min-width: 1100px) {
+  .thirdSection .howDoes .reason h4 {
+    margin-bottom: 19vh;
+    margin-left: 25vh;
+  }
 }
 .thirdSection .ultimateForm {
   background-color: #f2a900;
@@ -735,7 +803,7 @@ header .desktopNav .contact {
   font-weight: 600;
   border-radius: 25px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .thirdSection .ultimateForm .validate .mc-field-group .btnSet .button-mailchimp {
     height: 55px;
     width: 100vh;
@@ -767,7 +835,7 @@ header .desktopNav .contact {
   height: 55px;
   width: 300px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .thirdSection .ultimateForm .validate .mc-field-group .btnSet .primary-btn {
     height: 55px;
     width: 100vh;
@@ -903,7 +971,7 @@ footer {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin: 0px auto 200px;
+  margin: 20px auto 200px;
 }
 
 /*# sourceMappingURL=style.css.map */

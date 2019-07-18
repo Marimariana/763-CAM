@@ -57,8 +57,10 @@ $white-color: #f2f2f2;
 $yellow-color: #f2a900;
 $grey-color: #6d6e70;
 //MediaQuery
-$break-mobile: 480px;
-$break-laptop: 1200px;
+$break-mobile: 600px;
+$break-tablet: 768px;
+$break-laptop: 992px;
+$break-desktop: 1100px;
 body {
     margin: 0px 0 0 0;
     overflow-x: hidden;
@@ -94,6 +96,9 @@ header {
         } 
     }
     .desktopNav {
+        @media only screen and (min-width: $break-desktop) {
+            font-size:140%
+        }
         @media screen and (max-width: $break-mobile){
         display: none;
         } 
@@ -162,10 +167,10 @@ header {
                 } 
                 .medium-form {
                     font-family: $font-family;
-                    width: 78%;
+                    width: 56%;
                     position: absolute;
                     top: 20%;
-                    left: 15vh;
+                    left: 20vh;
                     display: flex;
                     align-content: space-evenly;
                     @media screen and (max-width: $break-mobile){
@@ -186,11 +191,17 @@ header {
                             width: 100vh;
                             text-align: center;
                         } 
+                        @media only screen and (min-width: $break-desktop){
+                            font-size: 250%;
+                        }
                     }
                     form {
                         margin-top: 17vh;
                         @media screen and (max-width: $break-mobile){
                             margin-top: 140vh; 
+                        }
+                        @media only screen and (min-width: $break-desktop){
+                            margin-top: 16vh;
                         }
                         input.requiredEmail {
                             font-family: $font-family;
@@ -213,6 +224,11 @@ header {
                                 height: 29px;
                                 padding: 30px;
                             } 
+                            @media only screen and (min-width: $break-desktop){
+                                width: 75%;
+                                height: 47px;
+                                padding: 3%;
+                            }
                         }
                         .checkboxBox {
                             display: flex;
@@ -225,6 +241,9 @@ header {
                                 right: 15%;
                                 width: 86vh;
                             } 
+                            input.checkbox {
+                             height: 2vh;
+                            }
                             p {
                                 @media screen and (max-width: $break-mobile){
                                   font-size: 115%;
@@ -241,6 +260,9 @@ header {
                         }
                         .btnSet {
                             margin-top: 5vh;
+                            @media only screen and (min-width: $break-desktop){
+                                margin-top: 3vh;
+                            }
                           .button-mailchimp {
                          @include btnPrimary;
                          height: 35px;
@@ -279,6 +301,11 @@ header {
                         width: 115vh;
                         margin-top: 85%;
                     } 
+                    @media only screen and (min-width: $break-desktop){
+                        font-size: 435%;
+                        margin-left: 14%;
+                        margin-top: 69vh;
+                    }
                    }
                     .miscelanea {
                     margin-top: 85vh;
@@ -288,6 +315,9 @@ header {
                         margin-left: -65%;
                         width: 100%;
                     } 
+                    @media only screen and (min-width: $break-desktop){
+                        margin-left: -80vh;
+                    }
                    }  
                 }
             }
@@ -304,6 +334,9 @@ header {
                     margin-top: -144vh;
                     z-index: 20;
                 } 
+                @media only screen and (min-width: $break-desktop){
+                    margin-right: 24%;
+                }
                 iframe{
                     width: 220%;
                     height: 75vh;
@@ -311,7 +344,7 @@ header {
                         width: 250%;
                         height: 90vh;
                     } 
-                    }
+                }
              }
          
             
@@ -459,6 +492,9 @@ header {
         margin: 5% 0 0px 48%;
         width: 75%;
         float: right;
+        @media only screen and (min-width: $break-desktop){
+            width:65%;
+        }
         h3 {
         font-family: $font-family;
         font-size: 375%;
@@ -477,6 +513,9 @@ header {
            position: absolute;
            top: 50vh;
            right: -5vh;
+           @media only screen and (min-width: $break-desktop){
+               right: -7vh;
+           }   
        }
     }
     
@@ -557,6 +596,9 @@ header {
             justify-content: space-between;
             position: absolute;
             margin-top: 25vh;
+            @media only screen and (min-width: $break-desktop){
+                margin-top:23vh;
+            }
          h4 {
             font-family: $font-family;
             color: $grey-color;
@@ -573,7 +615,11 @@ header {
                 color: $yellow-color;
                 font-style: oblique;
             }
+             @media only screen and (min-width: $break-desktop){
+            margin-bottom: 19vh;
+            margin-left: 25vh;
          }   
+        }
         }
     }
     .ultimateForm {
@@ -769,5 +815,5 @@ footer {
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 0px auto 200px;
+    margin: 20px auto 200px;
 }
