@@ -323,35 +323,6 @@ header .desktopNav .contact {
     margin-top: 107vh;
   }
 }
-.home .containerBox .title {
-  font-family: "Source Sans Pro", sans-serif;
-  color: #f2a900;
-  font-size: 330%;
-  line-height: 110%;
-  font-weight: bold;
-  position: absolute;
-  margin-left: 18%;
-  width: 844px;
-  margin-top: 67vh;
-  z-index: 100;
-}
-@media screen and (max-width: 600px) {
-  .home .containerBox .title {
-    font-size: 425%;
-    position: absolute;
-    text-align: center;
-    margin-left: 10%;
-    width: 115vh;
-    margin-top: 85%;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .home .containerBox .title {
-    font-size: 435%;
-    margin-left: 14%;
-    margin-top: 69vh;
-  }
-}
 .home .containerBox .miscelanea {
   margin-top: 85vh;
   margin-left: -105vh;
@@ -372,32 +343,65 @@ header .desktopNav .contact {
 .medium-content {
   max-width: 700px;
   min-width: 400px;
-  position: relative;
-  z-index: 10;
-  float: right;
-  margin-right: 20%;
-  margin-top: -83vh;
+  position: absolute;
+  z-index: 20;
+  margin-top: -80vh;
+  right: 40vh;
+}
+@media screen and (min-width: 1600px) {
+  .medium-content {
+    margin-top: -85vh;
+    right: 65vh;
+  }
 }
 @media screen and (max-width: 600px) {
   .medium-content {
     margin-right: 12%;
     margin-top: -144vh;
-    z-index: 20;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .medium-content {
-    margin-right: 24%;
   }
 }
 .medium-content iframe {
-  width: 220%;
-  height: 75vh;
+  width: 230%;
+  height: 65vh;
+}
+@media screen and (min-width: 1600px) {
+  .medium-content iframe {
+    width: 330%;
+    height: 80vh;
+  }
 }
 @media screen and (max-width: 600px) {
   .medium-content iframe {
     width: 250%;
     height: 90vh;
+  }
+}
+
+.title {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #f2a900;
+  font-size: 330%;
+  line-height: 110%;
+  font-weight: bold;
+  position: absolute;
+  margin-left: 14%;
+  width: 844px;
+  margin-top: -35vh;
+  z-index: 100;
+}
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 425%;
+    position: absolute;
+    text-align: center;
+    margin-left: 10%;
+    width: 115vh;
+    margin-top: 85%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .title {
+    font-size: 435%;
   }
 }
 
@@ -699,7 +703,7 @@ header .desktopNav .contact {
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
-  margin-top: 25vh;
+  margin-top: 20vh;
 }
 @media only screen and (min-width: 1600px) {
   .thirdSection .howDoes .reason {
@@ -712,7 +716,7 @@ header .desktopNav .contact {
   font-size: 195%;
   line-height: 105%;
   text-align: left;
-  margin-bottom: 18vh;
+  margin-bottom: 16vh;
   margin-left: 40vh;
 }
 .thirdSection .howDoes .reason h4 .bold {
