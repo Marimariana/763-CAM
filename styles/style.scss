@@ -53,6 +53,7 @@ $white-color: #f2f2f2;
 $yellow-color: #f2a900;
 $grey-color: #6d6e70;
 //MediaQuery
+$break-mobile: 480px;
 $break-laptop: 1200px;
 body {
     margin: 0px 0 0 0;
@@ -63,16 +64,33 @@ body {
     max-width: 100%;
     padding: 0px;
     margin: 0px 0px 0px 0px;
+    @media screen and (max-width: $break-mobile){
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    } 
 }
 header { 
     position: relative;
     z-index: 30;
+    @media screen and (max-width: $break-mobile){
+        margin: -15px 0px 0px 15px;
+        width: 20vw;
+    } 
     .logo {
         float:left;
         margin-top: 40px;
         margin-left: 5%;
+        @media screen and (max-width: $break-mobile){
+            float: left;
+            margin-top: 25px;
+            margin-left: 5%;
+        } 
     }
     .desktopNav {
+        @media screen and (max-width: $break-mobile){
+        display: none;
+        } 
         font-family: $font-family;
         display: inline-block;
         font-size: 20px;
@@ -119,7 +137,13 @@ header {
     display: flex;
     height: 100vh;
     display: unset;
-
+    @media screen and (max-width: $break-mobile){
+        width: 100%;
+        display: flex;
+        height: 100vh;
+        display: unset;
+        margin: 0px 0px 0px -100px;   
+    } 
         .containerBox {
                 background-color: #f2f2f2;
                 border-bottom: 1px solid #f2f2f2;
@@ -127,6 +151,9 @@ header {
                 width: 55%;
                 position: relative;
                 z-index: 20;
+                @media screen and (max-width: $break-mobile){
+                 width: 125%;
+                } 
                 .medium-form {
                     font-family: $font-family;
                     width: 513px;
@@ -135,12 +162,21 @@ header {
                     left: 23%;
                     display: flex;
                     align-content: space-evenly;
+                    
                     .abstract {
                         font-size: 38px;
                         position: absolute;
                         .bold {
                             font-weight: bold;
                         }
+                        @media screen and (max-width: $break-mobile){
+                            top: 188%;
+                            right: 56%;
+                            font-size: 16px;
+                            width: 310px;
+                            text-align: center;
+                            position: absolute;
+                        } 
                     }
                     form {
                         margin-top: 35%;
@@ -157,12 +193,31 @@ header {
                             justify-content: center;
                             align-items: center;
                             padding: 20px;
+                            @media screen and (max-width: $break-mobile){
+                                top: 300%;
+                                position: absolute;
+                                right: 53%;
+                                font-size: 15px;
+                                width: 335px;
+                                height: 5px;
+                                padding: 15px;
+                            } 
                         }
                         .checkboxBox {
                             display: flex;
                             align-content: space-between;
                             margin-top: 15px;
+                            @media screen and (max-width: $break-mobile){
+                                margin-top: 0px;
+                                position: absolute;
+                                top: 130%;
+                                right: -20%;
+                                width: 350px;
+                            } 
                             p {
+                                @media screen and (max-width: $break-mobile){
+                                  font-size: 10px;
+                                } 
                                 margin-left: 12px;
                                 font-family: $font-family;
                                 color: $grey-color;
@@ -171,12 +226,16 @@ header {
                                     font-weight: bold;
                                 }
                             }
+        
                         }
                         .btnSet {
                             margin-top: 40px;
                           .button-mailchimp {
                          @include btnPrimary;
                          height: 35px;
+                         @media screen and (max-width: $break-mobile){
+                            margin-top: 40px;
+                        } 
                         }
                           .primary-btn {
                          @include btnPrimary;
@@ -195,10 +254,23 @@ header {
                     width: 844px;
                     margin-top: 60%;
                     z-index: 100;
+                    @media screen and (max-width: $break-mobile){
+                        font-size: 26px;
+                        position: absolute;
+                        text-align: center;
+                        margin-left: 0%;
+                        width: 380px;
+                        margin-top: 72%;
+                    } 
                    }
                     .miscelanea {
                     margin-top: 82%;
                     margin-left: -145%;  
+                    @media screen and (max-width: $break-mobile){
+                        margin-top: 90%;
+                        margin-left: -65%;
+                        width: 100%;
+                    } 
                    }  
                 }
             }
@@ -210,9 +282,22 @@ header {
                 float: right;
                 margin-right: 20%;
                 margin-top: -45%;
+                @media screen and (max-width: $break-mobile){
+                    max-width: 700px;
+                    min-width: 400px;
+                    position: relative;
+                    z-index: 10;
+                    float: right;
+                    margin-right: 6%;
+                    margin-top: -114%;
+                } 
                 iframe{
                     width: 220%;
                     height: 75vh;
+                    @media screen and (max-width: $break-mobile){
+                        width: 100%;
+                        height: 40vh;
+                    } 
                     }
              }
          
@@ -263,6 +348,11 @@ header {
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
+                        @media screen and (max-width: $break-mobile){
+                            position: absolute;
+                            top: 230%;
+                            right: 61%;
+                        } 
                     }
                     .mc-field-group-legal {
                         display: flex;
