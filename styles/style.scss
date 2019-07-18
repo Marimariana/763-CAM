@@ -99,10 +99,6 @@ header {
         @media only screen and (min-width: $break-desktop) {
             font-size:140%
         }
-        @media only screen and (min-width:$break-laptop) {
-            margin-top: 18vh;
-            margin-right: 2vh; 
-        }
         @media screen and (max-width: $break-mobile){
         display: none;
         } 
@@ -195,9 +191,6 @@ header {
                             width: 100vh;
                             text-align: center;
                         } 
-                        @media only screen and (min-width:$break-laptop) {
-                            font-size: 195%; 
-                        }
                         @media only screen and (min-width: $break-desktop){
                             font-size: 250%;
                         }
@@ -206,9 +199,6 @@ header {
                         margin-top: 17vh;
                         @media screen and (max-width: $break-mobile){
                             margin-top: 140vh; 
-                        }
-                        @media only screen and (min-width:$break-laptop) {
-                            margin-top: 20vh;
                         }
                         @media only screen and (min-width: $break-desktop){
                             margin-top: 16vh;
@@ -273,9 +263,6 @@ header {
                             @media only screen and (min-width: $break-desktop){
                                 margin-top: 3vh;
                             }
-                            @media only screen and (min-width:$break-laptop) {
-                                margin-top: 2vh;
-                            }
                           .button-mailchimp {
                          @include btnPrimary;
                          height: 35px;
@@ -303,11 +290,6 @@ header {
                         margin-left: -65%;
                         width: 100%;
                     } 
-                    @media only screen and (min-width:$break-laptop) {
-                        margin-top: 85vh;
-                        margin-left: -70vh;
-                        width: 100%;
-                    }
                     @media only screen and (min-width: $break-desktop){
                         margin-left: -80vh;
                     }
@@ -361,11 +343,6 @@ header {
                     width: 115vh;
                     margin-top: 85%;
                 } 
-                @media only screen and (min-width:$break-laptop) {
-                    font-size: 250%;
-                    margin-left: 10%;
-                    margin-top: -30vh;
-                }
                 @media only screen and (min-width: $break-desktop){
                     font-size: 435%;
                 }

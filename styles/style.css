@@ -77,12 +77,6 @@ header .desktopNav {
     font-size: 140%;
   }
 }
-@media only screen and (min-width: 1360px) {
-  header .desktopNav {
-    margin-top: 18vh;
-    margin-right: 2vh;
-  }
-}
 @media screen and (max-width: 600px) {
   header .desktopNav {
     display: none;
@@ -180,11 +174,6 @@ header .desktopNav .contact {
     text-align: center;
   }
 }
-@media only screen and (min-width: 1360px) {
-  .home .containerBox .medium-form .abstract {
-    font-size: 195%;
-  }
-}
 @media only screen and (min-width: 1600px) {
   .home .containerBox .medium-form .abstract {
     font-size: 250%;
@@ -196,11 +185,6 @@ header .desktopNav .contact {
 @media screen and (max-width: 600px) {
   .home .containerBox .medium-form form {
     margin-top: 140vh;
-  }
-}
-@media only screen and (min-width: 1360px) {
-  .home .containerBox .medium-form form {
-    margin-top: 20vh;
   }
 }
 @media only screen and (min-width: 1600px) {
@@ -278,11 +262,6 @@ header .desktopNav .contact {
     margin-top: 3vh;
   }
 }
-@media only screen and (min-width: 1360px) {
-  .home .containerBox .medium-form form .btnSet {
-    margin-top: 2vh;
-  }
-}
 .home .containerBox .medium-form form .btnSet .button-mailchimp {
   display: flex;
   justify-content: center;
@@ -355,13 +334,6 @@ header .desktopNav .contact {
     width: 100%;
   }
 }
-@media only screen and (min-width: 1360px) {
-  .home .containerBox .miscelanea {
-    margin-top: 85vh;
-    margin-left: -70vh;
-    width: 100%;
-  }
-}
 @media only screen and (min-width: 1600px) {
   .home .containerBox .miscelanea {
     margin-left: -80vh;
@@ -425,13 +397,6 @@ header .desktopNav .contact {
     margin-left: 10%;
     width: 115vh;
     margin-top: 85%;
-  }
-}
-@media only screen and (min-width: 1360px) {
-  .title {
-    font-size: 250%;
-    margin-left: 10%;
-    margin-top: -30vh;
   }
 }
 @media only screen and (min-width: 1600px) {
