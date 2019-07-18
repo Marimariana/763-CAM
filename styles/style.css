@@ -21,7 +21,6 @@ time, mark, audio, video {
 
 body {
   margin: 0px 0 0 0;
-  max-width: 1730px;
   overflow-x: hidden;
 }
 
@@ -39,6 +38,10 @@ body {
 }
 
 header {
+  height: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   z-index: 30;
 }
@@ -50,7 +53,7 @@ header {
 }
 header .logo {
   float: left;
-  margin-top: 40px;
+  margin-top: 20vh;
   margin-left: 5%;
 }
 @media screen and (max-width: 480px) {
@@ -63,12 +66,12 @@ header .logo {
 header .desktopNav {
   font-family: "Source Sans Pro", sans-serif;
   display: inline-block;
-  font-size: 20px;
+  font-size: 120%;
   font-weight: 600;
   color: #6d6e70;
   float: right;
-  margin-top: 40px;
-  margin-right: 40px;
+  margin-top: 20vh;
+  margin-right: 5vh;
 }
 @media screen and (max-width: 480px) {
   header .desktopNav {
@@ -137,16 +140,17 @@ header .desktopNav .contact {
 }
 .home .containerBox .medium-form {
   font-family: "Source Sans Pro", sans-serif;
-  width: 513px;
+  width: 78%;
   position: absolute;
-  top: 15%;
-  left: 23%;
+  top: 20%;
+  left: 15vh;
   display: flex;
   align-content: space-evenly;
 }
 .home .containerBox .medium-form .abstract {
-  font-size: 38px;
+  font-size: 225%;
   position: absolute;
+  line-height: 95%;
 }
 .home .containerBox .medium-form .abstract .bold {
   font-weight: bold;
@@ -162,21 +166,20 @@ header .desktopNav .contact {
   }
 }
 .home .containerBox .medium-form form {
-  margin-top: 35%;
-  font-size: 19px;
+  margin-top: 17vh;
 }
 .home .containerBox .medium-form form input.requiredEmail {
   font-family: "Source Sans Pro", sans-serif;
   color: #f2f2f2;
-  font-size: 20px;
+  font-size: 115%;
   border: 1px solid #c5c5c5;
   border-radius: 20px;
-  width: 377px;
+  width: 80%;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 4%;
 }
 @media screen and (max-width: 480px) {
   .home .containerBox .medium-form form input.requiredEmail {
@@ -192,7 +195,7 @@ header .desktopNav .contact {
 .home .containerBox .medium-form form .checkboxBox {
   display: flex;
   align-content: space-between;
-  margin-top: 15px;
+  margin-top: 3vh;
 }
 @media screen and (max-width: 480px) {
   .home .containerBox .medium-form form .checkboxBox {
@@ -207,7 +210,7 @@ header .desktopNav .contact {
   margin-left: 12px;
   font-family: "Source Sans Pro", sans-serif;
   color: #6d6e70;
-  font-size: 19px;
+  font-size: 15px;
 }
 @media screen and (max-width: 480px) {
   .home .containerBox .medium-form form .checkboxBox p {
@@ -218,7 +221,7 @@ header .desktopNav .contact {
   font-weight: bold;
 }
 .home .containerBox .medium-form form .btnSet {
-  margin-top: 40px;
+  margin-top: 5vh;
 }
 .home .containerBox .medium-form form .btnSet .button-mailchimp {
   display: flex;
@@ -265,12 +268,13 @@ header .desktopNav .contact {
 .home .containerBox .title {
   font-family: "Source Sans Pro", sans-serif;
   color: #f2a900;
-  font-size: 70px;
+  font-size: 330%;
+  line-height: 110%;
   font-weight: bold;
   position: absolute;
-  margin-left: 23%;
+  margin-left: 18%;
   width: 844px;
-  margin-top: 60%;
+  margin-top: 67vh;
   z-index: 100;
 }
 @media screen and (max-width: 480px) {
@@ -284,8 +288,8 @@ header .desktopNav .contact {
   }
 }
 .home .containerBox .miscelanea {
-  margin-top: 82%;
-  margin-left: -145%;
+  margin-top: 85vh;
+  margin-left: -105vh;
 }
 @media screen and (max-width: 480px) {
   .home .containerBox .miscelanea {
@@ -302,15 +306,10 @@ header .desktopNav .contact {
   z-index: 10;
   float: right;
   margin-right: 20%;
-  margin-top: -45%;
+  margin-top: -83vh;
 }
 @media screen and (max-width: 480px) {
   .medium-content {
-    max-width: 700px;
-    min-width: 400px;
-    position: relative;
-    z-index: 10;
-    float: right;
     margin-right: 6%;
     margin-top: -114%;
   }
@@ -492,16 +491,15 @@ header .desktopNav .contact {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  margin: 129px 0 129px 0;
+  margin: 20vh 0 20vh 0;
 }
 .secondSection .banner {
   background-image: url("../assets/Img/Asset 1-100.jpg");
-  height: 60vh;
+  height: 80vh;
   background-position: center left;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 85vh;
-  width: 65%;
+  width: 75%;
 }
 .secondSection .whatIs {
   display: flex;
@@ -510,27 +508,27 @@ header .desktopNav .contact {
   position: absolute;
   z-index: 50;
   margin: 5% 0 0px 48%;
-  width: 100%;
+  width: 75%;
   float: right;
 }
 .secondSection .whatIs h3 {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 85px;
+  font-size: 375%;
   font-weight: bold;
   margin: 0 -10px 30px -55px;
 }
 .secondSection .whatIs p {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 27px;
-  width: 870px;
+  font-size: 140%;
+  width: 65%;
 }
 .secondSection .whatIs p .bold {
   font-weight: bold;
 }
 .secondSection .whatIs img.miscelanea {
   position: absolute;
-  top: 145%;
-  right: 30%;
+  top: 50vh;
+  right: -5vh;
 }
 
 .thirdSection {
@@ -554,7 +552,7 @@ header .desktopNav .contact {
   justify-content: space-around;
   background-color: white;
   height: 352px;
-  width: 419px;
+  width: 45vh;
   border: 1px solid #6d6e7038;
   border-radius: 20px;
   box-shadow: 5px 6px 15px 1px #5252523b;
@@ -564,19 +562,19 @@ header .desktopNav .contact {
   text-align: center;
 }
 .thirdSection .containerBoxes .boxes h2 {
-  font-size: 55px;
+  font-size: 7vh;
   font-weight: bold;
   color: #f2a900;
   justify-content: center;
-  line-height: 50px;
+  line-height: 6vh;
 }
 .thirdSection .containerBoxes .boxes h2 .strech {
   margin-bottom: -20%;
 }
 .thirdSection .containerBoxes .boxes p {
-  font-size: 19px;
+  font-size: 125%;
   color: #404040;
-  line-height: 26px;
+  line-height: 115%;
   margin-top: -10%;
 }
 .thirdSection .containerBoxes .boxes p .bold {
@@ -609,16 +607,16 @@ header .desktopNav .contact {
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
-  margin-top: 23vh;
+  margin-top: 25vh;
 }
 .thirdSection .howDoes .reason h4 {
   font-family: "Source Sans Pro", sans-serif;
   color: #6d6e70;
-  font-size: 35px;
-  line-height: 42px;
+  font-size: 195%;
+  line-height: 105%;
   text-align: left;
-  margin-bottom: 15vh;
-  margin-left: 25vh;
+  margin-bottom: 18vh;
+  margin-left: 40vh;
 }
 .thirdSection .howDoes .reason h4 .bold {
   font-weight: bold;
