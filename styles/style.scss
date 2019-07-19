@@ -331,7 +331,7 @@ header {
                 line-height: 110%;
                 font-weight: bold;
                 position: absolute;
-                margin-left: 14%;
+                left: 20vh;
                 width: 844px;
                 margin-top: -35vh;
                 z-index: 100;
@@ -343,6 +343,13 @@ header {
                     width: 115vh;
                     margin-top: 85%;
                 } 
+<<<<<<< HEAD
+=======
+                @media only screen and (min-width:$break-laptop) {
+                    font-size: 250%;
+                    margin-top: -30vh;
+                }
+>>>>>>> 570c86e71b8f14d1a350e37aeef7af6e5b2da356
                 @media only screen and (min-width: $break-desktop){
                     font-size: 435%;
                 }
