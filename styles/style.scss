@@ -57,7 +57,7 @@ $white-color: #f2f2f2;
 $yellow-color: #f2a900;
 $grey-color: #6d6e70;
 //MediaQuery
-$break-mobile: 600px;
+$break-mobile: 700px;
 $break-tablet: 768px;
 $break-laptop: 1360px;
 $break-desktop: 1600px;
@@ -83,7 +83,6 @@ header {
     position: relative;
     z-index: 30;
     @media screen and (max-width: $break-mobile){
-        margin: 64px 0px 0px 50px;
         width: 0vw;
     } 
     .logo {
@@ -91,9 +90,14 @@ header {
         margin-top: 20vh;
         margin-left: 5%;
         @media screen and (max-width: $break-mobile){
-            margin-top: 5vh;
-            margin-left: 5%;
+            margin-top: 15vh;
+            margin-left: 4vh;
         } 
+        img {
+            @media screen and (max-width: $break-mobile){
+                width: 40vh;
+            }
+        }
     }
     .desktopNav {
         @media only screen and (min-width: $break-desktop) {
@@ -161,9 +165,8 @@ header {
                 position: relative;
                 z-index: 20;
                 @media screen and (max-width: $break-mobile){
-                    width: 255%;
-                    height: 165vh;
-                    left: -10vh;
+                    width: 115vw;
+                    height: 75vh;
                 } 
                 .medium-form {
                     font-family: $font-family;
@@ -174,8 +177,8 @@ header {
                     display: flex;
                     align-content: space-evenly;
                     @media screen and (max-width: $break-mobile){
-                        top: 16%;
-                        left: 16vh;
+                        top: -115vh;
+                        left: 23vh;
                     } 
                     .abstract {
                         font-size: 225%;
@@ -185,10 +188,10 @@ header {
                             font-weight: bold;
                         }
                         @media screen and (max-width: $break-mobile){
-                            top: 190vh;
-                            right: 5%;
-                            font-size: 260%;
-                            width: 100vh;
+                            top: 195vh;
+                            right: 8%;
+                            font-size: 130%;
+                            width: 90vw;
                             text-align: center;
                         } 
                         @media only screen and (min-width: $break-desktop){
@@ -198,7 +201,7 @@ header {
                     form {
                         margin-top: 17vh;
                         @media screen and (max-width: $break-mobile){
-                            margin-top: 140vh; 
+                            margin-top: 126vh; 
                         }
                         @media only screen and (min-width: $break-desktop){
                             margin-top: 16vh;
@@ -216,13 +219,13 @@ header {
                             align-items: center;
                             padding: 4%;
                             @media screen and (max-width: $break-mobile){
-                                top: 90%;
+                                top: 220vh;
                                 position: absolute;
                                 right: 5%;
                                 font-size: 15px;
-                                width: 100vh;
-                                height: 29px;
-                                padding: 30px;
+                                width: 95vw;
+                                height: 6px;
+                                padding: 15px;
                             } 
                             @media only screen and (min-width: $break-desktop){
                                 width: 75%;
@@ -235,18 +238,20 @@ header {
                             align-content: space-between;
                             margin-top: 3vh;
                             @media screen and (max-width: $break-mobile){
-                                margin-top: 0px;
                                 position: absolute;
-                                top: 85%;
-                                right: 15%;
-                                width: 86vh;
+                                top: 89%;
+                                right: 5%;
+                                width: 50vh;
                             } 
                             input.checkbox {
                              height: 2vh;
+                             @media screen and (max-width: $break-mobile){
+                                 height: 4vh;
+                             }
                             }
                             p {
                                 @media screen and (max-width: $break-mobile){
-                                  font-size: 115%;
+                                  font-size: 55%;
                                 } 
                                 margin-left: 12px;
                                 font-family: $font-family;
@@ -260,6 +265,9 @@ header {
                         }
                         .btnSet {
                             margin-top: 5vh;
+                            @media screen and (max-width: $break-mobile){
+                                margin-left: -19vh;
+                            }
                             @media only screen and (min-width: $break-desktop){
                                 margin-top: 3vh;
                             }
@@ -268,14 +276,16 @@ header {
                          height: 35px;
                          @media screen and (max-width: $break-mobile){
                             width: 50vh;
-                            height: 40px;
+                            height: 30px;
                         } 
                         }
                           .primary-btn {
                          @include btnPrimary;
                          @media screen and (max-width: $break-mobile){
-                            width: 100vh;
-                            margin-top: 107vh;
+                            width: 55vh;
+                            margin-top: 97vh;
+                            height: 6vh;
+                            border-radius: 10px;
                         } 
                          }  
                         }
@@ -308,8 +318,10 @@ header {
                   right: 65vh;  
                 }
                 @media screen and (max-width: $break-mobile){
-                    margin-right: 12%;
-                    margin-top: -144vh;
+                    margin-right: -45vh;
+                    margin-top: -60vh;
+                    max-width: 500px;
+                    min-width: 200px;
                 } 
                 iframe{
                     width: 230%;
@@ -319,8 +331,8 @@ header {
                     height: 80vh;
                     }
                     @media screen and (max-width: $break-mobile){
-                        width: 250%;
-                        height: 90vh;
+                        width: 115vw;
+                        height: 40vh;
                     } 
                 }
              }
@@ -336,25 +348,27 @@ header {
                 margin-top: -35vh;
                 z-index: 100;
                 @media screen and (max-width: $break-mobile){
-                    font-size: 425%;
+                    font-size: 150%;
                     position: absolute;
                     text-align: center;
-                    margin-left: 10%;
-                    width: 115vh;
-                    margin-top: 85%;
+                    margin-left: -45vw;
+                    width: 125vw;
+                    margin-top: -18vh;
                 } 
-<<<<<<< HEAD
-=======
                 @media only screen and (min-width:$break-laptop) {
                     font-size: 250%;
                     margin-top: -30vh;
                 }
->>>>>>> 570c86e71b8f14d1a350e37aeef7af6e5b2da356
                 @media only screen and (min-width: $break-desktop){
                     font-size: 435%;
                 }
                }
-            
+                .modal {
+                    @media screen and (max-width: $break-mobile){
+                        padding: 6vh;
+                        width:115vw;
+                    }
+                }
                 .modal-backdrop {
                     background-color: #f9b133; 
                 }
@@ -378,6 +392,11 @@ header {
                     box-shadow: 2px;
                     box-shadow: 15px 15px #5252523b;
                     outline: 0;
+                    @media screen and (max-width: $break-mobile){
+                        width: 90vw;
+                        height: 250vh;
+                        padding: 1vh;
+                    }
                     .button {
                         @include btnPrimary();
                         display: flex;
@@ -402,9 +421,7 @@ header {
                         flex-direction: column;
                         align-items: flex-start;
                         @media screen and (max-width: $break-mobile){
-                            position: absolute;
-                            top: 230%;
-                            right: 61%;
+                            position: initial;
                         } 
                     }
                     .mc-field-group-legal {
@@ -433,12 +450,18 @@ header {
                         justify-content: space-between;
                         align-items: baseline;
                         padding: 10px;
+                        @media screen and (max-width: $break-mobile){
+                            flex-direction: column;
+                        }
                     }
                     .secondSectionForm {
                         display: flex;
                         justify-content: center;
                         margin: 20px auto 20px;
                         border-top: 1px solid #d4d1d19c;
+                        @media screen and (max-width: $break-mobile){
+                            flex-direction: column;
+                        }
                     }
                     .columnForm {
                         display: flex;
@@ -454,6 +477,9 @@ header {
                             justify-content: space-between;
                             align-items: baseline;
                             padding: 10px;
+                            @media screen and (max-width: $break-mobile){
+                                flex-direction: column;
+                            }
                             button {
                             @include inputForm();
                             border: 1px solid #c5c5c5;
