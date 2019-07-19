@@ -23,6 +23,12 @@ body {
   margin: 0px 0 0 0;
   overflow-x: hidden;
 }
+@media screen and (max-width: 700px) {
+  body {
+    max-width: 500px;
+    min-width: 380px;
+  }
+}
 
 .container {
   max-width: 100%;
@@ -628,6 +634,13 @@ header .desktopNav .contact {
   justify-content: left;
   margin: 20vh 0 20vh 0;
 }
+@media screen and (max-width: 700px) {
+  .secondSection {
+    flex-direction: column;
+    justify-content: center;
+    margin: 25vh 0 5vh;
+  }
+}
 .secondSection .banner {
   background-image: url("../assets/Img/Asset 1-100.jpg");
   height: 80vh;
@@ -635,6 +648,15 @@ header .desktopNav .contact {
   background-repeat: no-repeat;
   background-size: contain;
   width: 75%;
+}
+@media screen and (max-width: 700px) {
+  .secondSection .banner {
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin: 0px 1vh 0px;
+  }
 }
 .secondSection .whatIs {
   display: flex;
@@ -651,11 +673,25 @@ header .desktopNav .contact {
     width: 65%;
   }
 }
+@media screen and (max-width: 700px) {
+  .secondSection .whatIs {
+    position: static;
+    text-align: center;
+    margin: 3vh auto 0px;
+    width: 85vw;
+  }
+}
 .secondSection .whatIs h3 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 375%;
   font-weight: bold;
   margin: 0 -10px 30px -55px;
+}
+@media screen and (max-width: 700px) {
+  .secondSection .whatIs h3 {
+    font-size: 250%;
+    margin: 0 auto;
+  }
 }
 .secondSection .whatIs p {
   font-family: "Source Sans Pro", sans-serif;
@@ -665,6 +701,13 @@ header .desktopNav .contact {
 .secondSection .whatIs p .bold {
   font-weight: bold;
 }
+@media screen and (max-width: 700px) {
+  .secondSection .whatIs p {
+    font-size: 97%;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
 .secondSection .whatIs img.miscelanea {
   position: absolute;
   top: 50vh;
@@ -673,6 +716,15 @@ header .desktopNav .contact {
 @media only screen and (min-width: 1600px) {
   .secondSection .whatIs img.miscelanea {
     right: -7vh;
+  }
+}
+@media screen and (max-width: 700px) {
+  .secondSection .whatIs img.miscelanea {
+    position: relative;
+    right: -30vh;
+    width: 110%;
+    top: 3vh;
+    transform: rotate(-180deg);
   }
 }
 
@@ -686,10 +738,23 @@ header .desktopNav .contact {
   flex-direction: row;
   justify-content: space-around;
 }
+@media screen and (max-width: 700px) {
+  .thirdSection .containerBoxes {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
 .thirdSection .containerBoxes .miscelanea {
   position: absolute;
   transform: translate(20px, 83px);
   width: 75%;
+}
+@media screen and (max-width: 700px) {
+  .thirdSection .containerBoxes .miscelanea {
+    transform: rotate(90deg) translate(36px, 250px);
+    width: 190%;
+  }
 }
 .thirdSection .containerBoxes .boxes {
   display: flex;
@@ -706,12 +771,27 @@ header .desktopNav .contact {
   position: relative;
   text-align: center;
 }
+@media screen and (max-width: 700px) {
+  .thirdSection .containerBoxes .boxes {
+    height: 35vh;
+    width: 65vw;
+    box-shadow: 1px 0px 6px 1px #5252521e;
+    padding: 10px;
+    margin: 4vh auto;
+  }
+}
 .thirdSection .containerBoxes .boxes h2 {
   font-size: 7vh;
   font-weight: bold;
   color: #f2a900;
   justify-content: center;
   line-height: 6vh;
+}
+@media screen and (max-width: 700px) {
+  .thirdSection .containerBoxes .boxes h2 {
+    font-size: 32px;
+    line-height: 5vh;
+  }
 }
 .thirdSection .containerBoxes .boxes h2 .strech {
   margin-bottom: -20%;
@@ -724,6 +804,12 @@ header .desktopNav .contact {
 }
 .thirdSection .containerBoxes .boxes p .bold {
   font-weight: bold;
+}
+@media screen and (max-width: 700px) {
+  .thirdSection .containerBoxes .boxes p {
+    font-size: 85%;
+    margin-top: -3%;
+  }
 }
 .thirdSection .howDoes {
   display: flex;

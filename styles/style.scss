@@ -64,6 +64,10 @@ $break-desktop: 1600px;
 body {
     margin: 0px 0 0 0;
     overflow-x: hidden;
+    @media screen and (max-width: $break-mobile){
+        max-width: 500px;
+        min-width: 380px;
+    }
 }
 .container {
     max-width: 100%;
@@ -508,6 +512,11 @@ header {
     flex-direction: row;
     justify-content: left;
     margin: 20vh 0 20vh 0;
+    @media screen and (max-width: $break-mobile){
+    flex-direction: column;
+    justify-content: center;
+    margin: 25vh 0 5vh;
+    }
     .banner {
         background-image: url("../assets/Img/Asset\ 1-100.jpg");
         height: 80vh;
@@ -515,6 +524,13 @@ header {
         background-repeat: no-repeat; 
         background-size: contain;
         width: 75%;
+        @media screen and (max-width: $break-mobile){
+            height: 40vh;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            margin: 0px 1vh 0px;
+        }
     }
     .whatIs {
         display: flex;
@@ -528,11 +544,21 @@ header {
         @media only screen and (min-width: $break-desktop){
             width:65%;
         }
+        @media screen and (max-width: $break-mobile){
+            position: static;
+            text-align: center;
+            margin: 3vh auto 0px;
+            width: 85vw;
+        }
         h3 {
         font-family: $font-family;
         font-size: 375%;
         font-weight: bold;
         margin: 0 -10px 30px -55px;
+        @media screen and (max-width: $break-mobile){
+            font-size: 250%;
+            margin: 0 auto;
+        }
        }
        p {
         font-family: $font-family;
@@ -540,6 +566,11 @@ header {
         width: 65%;
         .bold {
             font-weight: bold;
+        }
+        @media screen and (max-width: $break-mobile){
+            font-size: 97%;
+            width: 100%;
+            margin-top: 10px;
         }
        }
        img.miscelanea {
@@ -549,6 +580,13 @@ header {
            @media only screen and (min-width: $break-desktop){
                right: -7vh;
            }   
+           @media screen and (max-width: $break-mobile){
+               position: relative;
+               right: -30vh;
+               width: 110%;
+               top: 3vh;
+               transform: rotate(-180deg);
+           }
        }
     }
     
@@ -561,10 +599,19 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        @media screen and (max-width: $break-mobile){
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+        }
         .miscelanea {
           position: absolute;
           transform: translate(20px, 83px);
           width: 75%;
+          @media screen and (max-width: $break-mobile){
+              transform: rotate(90deg) translate(36px, 250px);
+              width: 190%;
+          }
         }
         .boxes {
             display: flex;
@@ -580,12 +627,23 @@ header {
             padding: 20px;
             position: relative;
             text-align: center;
+            @media screen and (max-width: $break-mobile){
+                height: 35vh;
+                width: 65vw;
+                box-shadow: 1px 0px 6px 1px #5252521e;
+                padding: 10px;
+                margin: 4vh auto;
+            }
             h2 {
                 font-size: 7vh;
                 font-weight: bold;
                 color: $yellow-color;
                 justify-content: center;
                 line-height: 6vh;
+                @media screen and (max-width: $break-mobile){
+                    font-size: 32px;
+                    line-height: 5vh;
+                }
                 .strech {
                     margin-bottom: -20%;
                 }
@@ -597,6 +655,10 @@ header {
                 margin-top: -10%;
                 .bold {
                     font-weight: bold;
+                }
+                @media screen and (max-width: $break-mobile){
+                    font-size: 85%;
+                    margin-top: -3%;
                 }
             }
 
