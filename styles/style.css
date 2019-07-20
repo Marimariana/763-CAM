@@ -193,7 +193,7 @@ header .desktopNav .contact:hover {
 @media screen and (max-width: 700px) {
   .home .containerBox .medium-form .abstract {
     top: 195vh;
-    right: 8%;
+    right: -2vh;
     font-size: 130%;
     width: 90vw;
     text-align: center;
@@ -234,7 +234,7 @@ header .desktopNav .contact:hover {
   .home .containerBox .medium-form form input.requiredEmail {
     top: 220vh;
     position: absolute;
-    right: 5%;
+    right: -10%;
     font-size: 15px;
     width: 95vw;
     height: 6px;
@@ -259,8 +259,8 @@ header .desktopNav .contact:hover {
 @media screen and (max-width: 700px) {
   .home .containerBox .medium-form form .checkboxBox {
     position: absolute;
-    top: 89%;
-    right: 5%;
+    top: 90%;
+    right: -5%;
     width: 50vh;
   }
 }
@@ -356,9 +356,9 @@ header .desktopNav .contact:hover {
 }
 @media screen and (max-width: 700px) {
   .home .containerBox .medium-form form .btnSet .primary-btn {
-    width: 270px;
+    width: 90vw;
     margin-top: 97vh;
-    height: 40px;
+    height: 35px;
     border-radius: 10px;
   }
 }

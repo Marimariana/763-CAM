@@ -204,7 +204,7 @@ header {
                         }
                         @media screen and (max-width: $break-mobile){
                             top: 195vh;
-                            right: 8%;
+                            right: -2vh;
                             font-size: 130%;
                             width: 90vw;
                             text-align: center;
@@ -236,7 +236,7 @@ header {
                             @media screen and (max-width: $break-mobile){
                                 top: 220vh;
                                 position: absolute;
-                                right: 5%;
+                                right: -10%;
                                 font-size: 15px;
                                 width: 95vw;
                                 height: 6px;
@@ -255,8 +255,8 @@ header {
                             }
                             @media screen and (max-width: $break-mobile){
                                 position: absolute;
-                                top: 89%;
-                                right: 5%;
+                                top: 90%;
+                                right: -5%;
                                 width: 50vh;
                             } 
                             input.checkbox {
@@ -298,9 +298,9 @@ header {
                           .primary-btn {
                          @include btnPrimary;
                          @media screen and (max-width: $break-mobile){
-                            width: 270px;
+                            width: 90vw;
                             margin-top: 97vh;
-                            height: 40px;
+                            height: 35px;
                             border-radius: 10px;
                         } 
                          }  
