@@ -64,7 +64,7 @@ body {
     margin: 0px 0 0 0;
     overflow-x: hidden;
     @media screen and (max-width: $break-mobile){
-        max-width: 500px;
+        max-width: 450px;
         min-width: 380px;
     }
 }
@@ -76,6 +76,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-content: center;
+        width: 100vw;
     } 
 }
 header { 
@@ -125,6 +126,7 @@ header {
         float: right;
         margin-top: 20vh;
         margin-right: 5vh;
+        text-decoration: none;
         ul{
             display: flex;
             justify-content: space-between;
@@ -134,12 +136,13 @@ header {
            }
         li { 
           margin: 0px 25px;
-          a:link {
+          a:link, a:visited, a:active{
             text-decoration:none; 
             color: $grey-color;
            } 
            &:hover {
                color: $yellow-color;
+               text-decoration:none;
            }
         }
         .contact {
@@ -153,8 +156,12 @@ header {
             width: 150px;
             margin-top:-8px;
             color: white;
+            a:link, a:visited, a:active{
+                text-decoration:none; 
+                color: white; }
             &:hover{
                 background-color: $grey-color;
+                color: white;
             }
         } 
     } 
@@ -179,7 +186,7 @@ header {
                 position: relative;
                 z-index: 20;
                 @media screen and (max-width: $break-mobile){
-                    width: 115vw;
+                    width: 100vw;
                     height: 75vh;
                 } 
                 .medium-form {
@@ -210,7 +217,7 @@ header {
                             text-align: center;
                         } 
                         @media only screen and (min-width: $break-desktop){
-                            font-size: 160%;
+                            font-size: 197%;
                         }
                     }
                     form {
@@ -312,9 +319,9 @@ header {
                     margin-top: 85vh;
                     margin-left: -105vh;  
                     @media screen and (max-width: $break-mobile){
-                        margin-top: 104%;
+                        margin-top: 67vh;
                         margin-left: -65%;
-                        width: 100%;
+                        width: 100vw;
                     } 
                     @media only screen and (min-width: $break-desktop){
                         margin-left: -100vh;
@@ -329,24 +336,23 @@ header {
                 position: absolute;
                 z-index: 20;
                 margin-top: -80vh;
-                right: 40vh;
+                right: 63vh;
                 @media screen and (min-width: $break-desktop){
-                  margin-top: -85vh;
-                  right: 65vh;  
+                  margin-top: -80vh;
+                  right: 63vh;  
                 }
                 @media screen and (max-width: $break-mobile){
                     margin-right: -45vh;
                     margin-top: -60vh;
-                    max-width: 500px;
-                    min-width: 200px;
+                    max-width: 450px;
+                    min-width: 315px;
                 } 
                 iframe{
-                    width: 230%;
-                    height: 65vh;
+                    width: 250%;
+                    height: 60vh;
                     @media screen and (min-width: $break-desktop){
-                    width: 249%;
-                    height: 75vh;
-                    }
+                    width: 250%;
+                    height: 60vh; }
                     @media screen and (max-width: $break-mobile){
                         width: 115vw;
                         height: 40vh;
@@ -379,6 +385,7 @@ header {
                 @media only screen and (min-width: $break-desktop){
                     font-size: 400%;
                     margin-top:-40vh;
+                    margin-left:-6vh;
                 }
                }
                 .modal {
@@ -531,9 +538,7 @@ header {
     justify-content: left;
     margin: 20vh 0 20vh 0;
     @media screen and (max-width: $break-mobile){
-    flex-direction: column;
-    justify-content: center;
-    margin: 25vh 0 5vh;
+    display: none;
     }
     .banner {
         background-image: url("../assets/Img/Asset\ 1-100.jpg");
@@ -542,13 +547,6 @@ header {
         background-repeat: no-repeat; 
         background-size: contain;
         width: 75%;
-        @media screen and (max-width: $break-mobile){
-            height: 40vh;
-            background-position: center;
-            background-size: cover;
-            width: 100%;
-            margin: 0px 1vh 0px;
-        }
     }
     .whatIs {
         display: flex;
@@ -561,12 +559,6 @@ header {
         float: right;
         @media only screen and (min-width: $break-desktop){
             width:65%;
-        }
-        @media screen and (max-width: $break-mobile){
-            position: static;
-            text-align: center;
-            margin: 3vh auto 0px;
-            width: 85vw;
         }
         h3 {
         font-family: $font-family;
@@ -585,11 +577,6 @@ header {
         .bold {
             font-weight: bold;
         }
-        @media screen and (max-width: $break-mobile){
-            font-size: 97%;
-            width: 100%;
-            margin-top: 10px;
-        }
        }
        img.miscelanea {
            position: absolute;
@@ -599,16 +586,30 @@ header {
                right: -35vh;
            }   
            @media screen and (max-width: $break-mobile){
-               position: relative;
-               right: -20vh;
-               width: 135%;
-               top: 3vh;
-               transform: rotate(-180deg);
+              display: none;
            }
        }
     }
     
 }
+.middleSection {
+    display: none;
+    @media screen and (max-width: $break-mobile){
+        display: block;
+        margin-top: 25vh;
+    }
+    .backgroundSection {
+        @media screen and (max-width: $break-mobile){
+        display: block;
+        background-image: url(../assets/Img/secondSection-02.jpg);
+        background-position: center center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        width:100vw;
+        height: 250vh;
+     }
+    }
+ }
 .thirdSection {
     display: flex;
     flex-direction: column;
@@ -618,17 +619,14 @@ header {
         flex-direction: row;
         justify-content: space-around;
         @media screen and (max-width: $break-mobile){
-            flex-direction: column;
-            justify-content: center;
-            margin: 0 auto;
+            display:none;
         }
         .miscelanea {
           position: absolute;
           transform: translate(20px, 83px);
           width: 75%;
           @media screen and (max-width: $break-mobile){
-              transform: rotate(90deg) translate(36px, 250px);
-              width: 190%;
+              display: none;
           }
         }
         .boxes {
@@ -646,11 +644,7 @@ header {
             position: relative;
             text-align: center;
             @media screen and (max-width: $break-mobile){
-                height: 35vh;
-                width: 65vw;
-                box-shadow: 1px 0px 6px 1px #5252521e;
-                padding: 10px;
-                margin: 4vh auto;
+                display: none;
             }
             h2 {
                 font-size: 7vh;
@@ -659,8 +653,7 @@ header {
                 justify-content: center;
                 line-height: 6vh;
                 @media screen and (max-width: $break-mobile){
-                    font-size: 32px;
-                    line-height: 5vh;
+                    display: none;
                 }
                 .strech {
                     margin-bottom: -20%;
@@ -675,8 +668,7 @@ header {
                     font-weight: bold;
                 }
                 @media screen and (max-width: $break-mobile){
-                    font-size: 85%;
-                    margin-top: -3%;
+                    display: none;
                 }
             }
 
@@ -688,7 +680,7 @@ header {
         align-items: center;
         padding: 110px;
         @media screen and (max-width: $break-mobile){
-            padding: 0px;
+            display: none;
         }
         h2 {
             font-family: $font-family;
@@ -696,7 +688,7 @@ header {
             font-size: 70px;
             font-weight: 600;
             @media screen and (max-width: $break-mobile){
-                font-size: 30px;
+                display: none;
             }
         }
         .icons {
@@ -708,9 +700,7 @@ header {
         width: 55%;
         margin: 110px auto 110px;
         @media screen and (max-width: $break-mobile){
-          background-position: center center;
-          margin: 35px auto 100px;
-          width: 50%;
+          display: none;
         }
         }
         .reason {
@@ -721,8 +711,7 @@ header {
             position: absolute;
             margin-top: 20vh;
             @media screen and (max-width: $break-mobile){
-                width: 75vw;
-                margin-top: 28vh;
+               display: none;
             }
             @media only screen and (min-width: $break-desktop){
                 margin-top:28vh;
@@ -744,11 +733,7 @@ header {
                 font-style: oblique;
             }
             @media screen and (max-width: $break-mobile){
-                font-size: 14px;
-                text-align: center;
-                margin-bottom: 22vh;
-                margin-left: 0px;
-                background-color: white;
+                display: none;
             }
              @media only screen and (min-width: $break-desktop){
              margin-bottom: 16vh;
