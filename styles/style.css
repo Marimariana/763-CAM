@@ -19,6 +19,12 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+@media screen and (max-width: 700px) {
+  html {
+    overflow-x: hidden;
+  }
+}
+
 body {
   margin: 0px 0 0 0;
   overflow-x: hidden;
@@ -38,8 +44,9 @@ body {
 @media screen and (max-width: 700px) {
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
+    flex-direction: column;
     width: 100vw;
   }
 }
@@ -68,7 +75,7 @@ header .logo {
     margin-left: 4vh;
   }
 }
-@media only screen and (min-width: 1330px) {
+@media only screen and (min-width: 1442px) {
   header .logo {
     margin-top: 15vh;
     margin-left: 4vh;
@@ -79,7 +86,7 @@ header .logo {
     width: 40vh;
   }
 }
-@media only screen and (min-width: 1330px) {
+@media only screen and (min-width: 1442px) {
   header .logo img {
     width: 25vw;
   }
@@ -95,7 +102,7 @@ header .desktopNav {
   margin-right: 5vh;
   text-decoration: none;
 }
-@media only screen and (min-width: 1330px) {
+@media only screen and (min-width: 1442px) {
   header .desktopNav {
     font-size: 110%;
     margin: 15vh 5vh 0 0;
@@ -183,10 +190,20 @@ header .desktopNav .contact:hover {
   display: flex;
   align-content: space-evenly;
 }
+@media only screen and (min-width: 1442px) {
+  .home .containerBox .medium-form {
+    width: 50%;
+    left: 20vh;
+  }
+}
 @media screen and (max-width: 700px) {
   .home .containerBox .medium-form {
     top: -115vh;
-    left: 23vh;
+    left: 27vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 .home .containerBox .medium-form .abstract {
@@ -207,9 +224,10 @@ header .desktopNav .contact:hover {
     text-align: center;
   }
 }
-@media only screen and (min-width: 1330px) {
+@media only screen and (min-width: 1442px) {
   .home .containerBox .medium-form .abstract {
-    font-size: 197%;
+    font-size: 260%;
+    top: 36px;
   }
 }
 .home .containerBox .medium-form form {
@@ -220,12 +238,12 @@ header .desktopNav .contact:hover {
     margin-top: 126vh;
   }
 }
-@media only screen and (min-width: 1330px) {
+@media only screen and (min-width: 1442px) {
   .home .containerBox .medium-form form {
-    margin-top: 13vh;
+    margin-top: 25vh;
   }
 }
-.home .containerBox .medium-form form input.requiredEmail {
+.home .containerBox .medium-form form input.required {
   font-family: "Source Sans Pro", sans-serif;
   color: #f2f2f2;
   font-size: 115%;
@@ -239,7 +257,7 @@ header .desktopNav .contact:hover {
   padding: 4%;
 }
 @media screen and (max-width: 700px) {
-  .home .containerBox .medium-form form input.requiredEmail {
+  .home .containerBox .medium-form form input.required {
     top: 220vh;
     position: absolute;
     right: -10%;
@@ -249,8 +267,8 @@ header .desktopNav .contact:hover {
     padding: 15px;
   }
 }
-@media only screen and (min-width: 1330px) {
-  .home .containerBox .medium-form form input.requiredEmail {
+@media only screen and (min-width: 1442px) {
+  .home .containerBox .medium-form form input.required {
     width: 90%;
   }
 }
@@ -259,7 +277,7 @@ header .desktopNav .contact:hover {
   align-content: space-between;
   margin-top: 3vh;
 }
-@media only screen and (min-width: 1330px) {
+@media only screen and (min-width: 1442px) {
   .home .containerBox .medium-form form .checkboxBox {
     margin-top: 10px;
   }
@@ -272,42 +290,42 @@ header .desktopNav .contact:hover {
     width: 50vh;
   }
 }
-.home .containerBox .medium-form form .checkboxBox input.checkbox {
+.home .containerBox .medium-form form .checkboxBox input.av-checkbox {
   height: 2vh;
 }
 @media screen and (max-width: 700px) {
-  .home .containerBox .medium-form form .checkboxBox input.checkbox {
+  .home .containerBox .medium-form form .checkboxBox input.av-checkbox {
     height: 4vh;
   }
 }
-.home .containerBox .medium-form form .checkboxBox p {
+.home .containerBox .medium-form form .checkboxBox span {
   margin-left: 12px;
   font-family: "Source Sans Pro", sans-serif;
   color: #6d6e70;
   font-size: 15px;
 }
 @media screen and (max-width: 700px) {
-  .home .containerBox .medium-form form .checkboxBox p {
+  .home .containerBox .medium-form form .checkboxBox span {
     font-size: 55%;
   }
 }
-.home .containerBox .medium-form form .checkboxBox p .bold {
+.home .containerBox .medium-form form .checkboxBox span .bold {
   font-weight: bold;
 }
-.home .containerBox .medium-form form .btnSet {
+.home .containerBox .medium-form form .clear {
   margin-top: 5vh;
 }
 @media screen and (max-width: 700px) {
-  .home .containerBox .medium-form form .btnSet {
-    margin-left: -19vh;
+  .home .containerBox .medium-form form .clear {
+    margin-left: -24vh;
   }
 }
-@media only screen and (min-width: 1330px) {
-  .home .containerBox .medium-form form .btnSet {
+@media only screen and (min-width: 1442px) {
+  .home .containerBox .medium-form form .clear {
     margin-top: 3vh;
   }
 }
-.home .containerBox .medium-form form .btnSet .button-mailchimp {
+.home .containerBox .medium-form form .clear .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -319,72 +337,29 @@ header .desktopNav .contact:hover {
   border-radius: 45px;
   height: 40px;
   width: 256px;
-  height: 35px;
-}
-@media screen and (max-width: 700px) {
-  .home .containerBox .medium-form form .btnSet .button-mailchimp {
-    height: 55px;
-    width: 100vh;
-  }
-}
-.home .containerBox .medium-form form .btnSet .button-mailchimp:hover {
-  border: 2px solid #f2a900;
-  background-color: #f2a900;
-  transition: ease-in 0.2s;
-}
-@media screen and (max-width: 700px) {
-  .home .containerBox .medium-form form .btnSet .button-mailchimp {
-    width: 50vh;
-    height: 30px;
-  }
-}
-.home .containerBox .medium-form form .btnSet .primary-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #6d6e70;
-  border: 2px solid #6d6e70;
+  line-height: 2px;
   font-family: "Source Sans Pro", sans-serif;
   color: white;
-  font-size: 20px;
-  border-radius: 45px;
-  height: 40px;
-  width: 256px;
+  font-weight: 600;
 }
 @media screen and (max-width: 700px) {
-  .home .containerBox .medium-form form .btnSet .primary-btn {
+  .home .containerBox .medium-form form .clear .btn {
     height: 55px;
     width: 100vh;
   }
 }
-.home .containerBox .medium-form form .btnSet .primary-btn:hover {
+.home .containerBox .medium-form form .clear .btn:hover {
   border: 2px solid #f2a900;
   background-color: #f2a900;
   transition: ease-in 0.2s;
 }
 @media screen and (max-width: 700px) {
-  .home .containerBox .medium-form form .btnSet .primary-btn {
+  .home .containerBox .medium-form form .clear .btn {
     width: 90vw;
-    margin-top: 97vh;
+    margin-top: 100vh;
     height: 35px;
     border-radius: 10px;
-  }
-}
-.home .containerBox .miscelanea {
-  margin-top: 85vh;
-  margin-left: -105vh;
-}
-@media screen and (max-width: 700px) {
-  .home .containerBox .miscelanea {
-    margin-top: 67vh;
-    margin-left: -65%;
-    width: 100vw;
-  }
-}
-@media only screen and (min-width: 1330px) {
-  .home .containerBox .miscelanea {
-    margin-left: -100vh;
-    margin-top: 84vh;
+    line-height: 2px;
   }
 }
 
@@ -393,13 +368,13 @@ header .desktopNav .contact:hover {
   min-width: 400px;
   position: absolute;
   z-index: 20;
-  margin-top: -80vh;
-  right: 63vh;
+  margin-top: 18vh;
+  left: 80%;
 }
-@media screen and (min-width: 1330px) {
+@media screen and (min-width: 1442px) {
   .medium-content {
-    margin-top: -80vh;
-    right: 63vh;
+    margin-top: 19vh;
+    left: 85%;
   }
 }
 @media screen and (max-width: 700px) {
@@ -414,7 +389,7 @@ header .desktopNav .contact:hover {
   width: 250%;
   height: 60vh;
 }
-@media screen and (min-width: 1330px) {
+@media screen and (min-width: 1442px) {
   .medium-content iframe {
     width: 250%;
     height: 60vh;
@@ -446,7 +421,7 @@ header .desktopNav .contact:hover {
     text-align: center;
     margin-left: -45vw;
     width: 125vw;
-    margin-top: -18vh;
+    margin-top: 55vh;
   }
 }
 @media only screen and (min-width: 701px) {
@@ -455,11 +430,29 @@ header .desktopNav .contact:hover {
     margin-top: -30vh;
   }
 }
-@media only screen and (min-width: 1330px) {
+@media only screen and (min-width: 1442px) {
   .title {
     font-size: 400%;
-    margin-top: -40vh;
-    margin-left: -6vh;
+    margin-top: 63vh;
+    margin-left: -1vh;
+  }
+}
+
+.miscelanea {
+  margin-top: 85vh;
+  margin-left: -105vh;
+}
+@media screen and (max-width: 700px) {
+  .miscelanea {
+    margin-top: 67vh;
+    margin-left: -65%;
+    width: 100vw;
+  }
+}
+@media only screen and (min-width: 1442px) {
+  .miscelanea {
+    margin-left: -80vh;
+    margin-top: 84vh;
   }
 }
 
@@ -523,6 +516,7 @@ header .desktopNav .contact:hover {
   border-radius: 45px;
   height: 40px;
   width: 256px;
+  line-height: 2px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -693,7 +687,7 @@ header .desktopNav .contact:hover {
   width: 75%;
   float: right;
 }
-@media only screen and (min-width: 1330px) {
+@media only screen and (min-width: 1442px) {
   .secondSection .whatIs {
     width: 65%;
   }
@@ -720,10 +714,10 @@ header .desktopNav .contact:hover {
 }
 .secondSection .whatIs img.miscelanea {
   position: absolute;
-  top: 50vh;
-  right: -5vh;
+  top: -30vh;
+  right: -20vh;
 }
-@media only screen and (min-width: 1330px) {
+@media only screen and (min-width: 1442px) {
   .secondSection .whatIs img.miscelanea {
     right: -35vh;
   }
@@ -774,6 +768,13 @@ header .desktopNav .contact:hover {
   position: absolute;
   transform: translate(20px, 83px);
   width: 75%;
+}
+@media only screen and (min-width: 1442px) {
+  .thirdSection .containerBoxes .miscelanea {
+    width: 87%;
+    margin-left: 0vh;
+    margin: 2vh;
+  }
 }
 @media screen and (max-width: 700px) {
   .thirdSection .containerBoxes .miscelanea {
@@ -878,9 +879,9 @@ header .desktopNav .contact:hover {
     display: none;
   }
 }
-@media only screen and (min-width: 1330px) {
+@media only screen and (min-width: 1442px) {
   .thirdSection .howDoes .reason {
-    margin-top: 28vh;
+    margin-top: 22vh;
   }
 }
 .thirdSection .howDoes .reason h4 {
@@ -905,10 +906,10 @@ header .desktopNav .contact:hover {
     display: none;
   }
 }
-@media only screen and (min-width: 1330px) {
+@media only screen and (min-width: 1442px) {
   .thirdSection .howDoes .reason h4 {
-    margin-bottom: 16vh;
-    margin-left: 30vh;
+    margin-bottom: 20vh;
+    margin-left: 20vh;
   }
 }
 .thirdSection .ultimateForm {
@@ -1029,6 +1030,7 @@ header .desktopNav .contact:hover {
   border-radius: 45px;
   height: 40px;
   width: 256px;
+  line-height: 2px;
   height: 37px;
   font-size: 26px;
   font-weight: 600;
@@ -1070,6 +1072,7 @@ header .desktopNav .contact:hover {
   border-radius: 45px;
   height: 40px;
   width: 256px;
+  line-height: 2px;
   height: 55px;
   width: 300px;
 }

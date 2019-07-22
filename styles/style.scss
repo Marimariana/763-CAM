@@ -31,6 +31,7 @@ time, mark, audio, video {
     border-radius: 45px;
     height: 40px;
     width: 256px;
+    line-height: 2px;
     @media screen and (max-width: $break-mobile) {
         height: 55px;
         width: 100vh; 
@@ -59,7 +60,12 @@ $grey-color: #6d6e70;
 //MediaQuery
 $break-mobile: 700px;
 $break-laptop: 701px;
-$break-desktop: 1330px;
+$break-desktop: 1442px;
+html {
+    @media screen and (max-width: $break-mobile){
+        overflow-x: hidden;
+    }
+}
 body {
     margin: 0px 0 0 0;
     overflow-x: hidden;
@@ -74,8 +80,9 @@ body {
     margin: 0px 0px 0px 0px;
     @media screen and (max-width: $break-mobile){
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-content: center;
+        flex-direction: column;
         width: 100vw;
     } 
 }
@@ -197,9 +204,17 @@ header {
                     left: 15vh;
                     display: flex;
                     align-content: space-evenly;
+                    @media only screen and (min-width: $break-desktop){
+                        width: 50%;
+                        left: 20vh;
+                    }
                     @media screen and (max-width: $break-mobile){
                         top: -115vh;
-                        left: 23vh;
+                        left: 27vh;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                      justify-content: center;
                     } 
                     .abstract {
                         font-size: 150%;
@@ -217,7 +232,8 @@ header {
                             text-align: center;
                         } 
                         @media only screen and (min-width: $break-desktop){
-                            font-size: 197%;
+                            font-size: 260%;
+                            top: 36px;
                         }
                     }
                     form {
@@ -226,9 +242,9 @@ header {
                             margin-top: 126vh; 
                         }
                         @media only screen and (min-width: $break-desktop){
-                            margin-top: 13vh;
+                            margin-top: 25vh;
                         }
-                        input.requiredEmail {
+                        input.required {
                             font-family: $font-family;
                             color: $white-color;
                             font-size: 115%;
@@ -266,13 +282,13 @@ header {
                                 right: -5%;
                                 width: 50vh;
                             } 
-                            input.checkbox {
+                            input.av-checkbox {
                              height: 2vh;
                              @media screen and (max-width: $break-mobile){
                                  height: 4vh;
                              }
                             }
-                            p {
+                            span {
                                 @media screen and (max-width: $break-mobile){
                                   font-size: 55%;
                                 } 
@@ -286,48 +302,30 @@ header {
                             }
         
                         }
-                        .btnSet {
+                        .clear {
                             margin-top: 5vh;
                             @media screen and (max-width: $break-mobile){
-                                margin-left: -19vh;
+                                margin-left: -24vh;
                             }
                             @media only screen and (min-width: $break-desktop){
                                 margin-top: 3vh;
                             }
-                          .button-mailchimp {
+                          .btn {
                          @include btnPrimary;
-                         height: 35px;
-                         @media screen and (max-width: $break-mobile){
-                            width: 50vh;
-                            height: 30px;
-                        } 
-                        }
-                          .primary-btn {
-                         @include btnPrimary;
+                         font-family: $font-family;
+                         color: white;
+                         font-weight: 600;
                          @media screen and (max-width: $break-mobile){
                             width: 90vw;
-                            margin-top: 97vh;
+                            margin-top: 100vh;
                             height: 35px;
                             border-radius: 10px;
+                            line-height: 2px;
                         } 
                          }  
                         }
                     }
                  }
-    
-                    .miscelanea {
-                    margin-top: 85vh;
-                    margin-left: -105vh;  
-                    @media screen and (max-width: $break-mobile){
-                        margin-top: 67vh;
-                        margin-left: -65%;
-                        width: 100vw;
-                    } 
-                    @media only screen and (min-width: $break-desktop){
-                        margin-left: -100vh;
-                        margin-top: 84vh;
-                    }
-                   }  
                 }
             }
             .medium-content {
@@ -335,11 +333,11 @@ header {
                 min-width: 400px;
                 position: absolute;
                 z-index: 20;
-                margin-top: -80vh;
-                right: 63vh;
+                margin-top: 18vh;
+                left: 80%;
                 @media screen and (min-width: $break-desktop){
-                  margin-top: -80vh;
-                  right: 63vh;  
+                  margin-top: 19vh;
+                  left: 85%;  
                 }
                 @media screen and (max-width: $break-mobile){
                     margin-right: -45vh;
@@ -376,7 +374,7 @@ header {
                     text-align: center;
                     margin-left: -45vw;
                     width: 125vw;
-                    margin-top: -18vh;
+                    margin-top: 55vh;
                 } 
                 @media only screen and (min-width:$break-laptop) {
                     font-size: 250%;
@@ -384,10 +382,23 @@ header {
                 }
                 @media only screen and (min-width: $break-desktop){
                     font-size: 400%;
-                    margin-top:-40vh;
-                    margin-left:-6vh;
+                    margin-top: 63vh;
+                    margin-left:-1vh;
                 }
                }
+               .miscelanea {
+                margin-top: 85vh;
+                margin-left: -105vh;  
+                @media screen and (max-width: $break-mobile){
+                    margin-top: 67vh;
+                    margin-left: -65%;
+                    width: 100vw;
+                } 
+                @media only screen and (min-width: $break-desktop){
+                    margin-left: -80vh;
+                    margin-top: 84vh;
+                }
+               }  
                 .modal {
                     @media screen and (max-width: $break-mobile){
                         padding: 6vh;
@@ -580,8 +591,8 @@ header {
        }
        img.miscelanea {
            position: absolute;
-           top: 50vh;
-           right: -5vh;
+           top: -30vh;
+           right: -20vh;
            @media only screen and (min-width: $break-desktop){
                right: -35vh;
            }   
@@ -625,6 +636,11 @@ header {
           position: absolute;
           transform: translate(20px, 83px);
           width: 75%;
+          @media only screen and (min-width: $break-desktop){
+              width: 87%;
+              margin-left: 0vh;
+              margin: 2vh;
+          }
           @media screen and (max-width: $break-mobile){
               display: none;
           }
@@ -714,7 +730,7 @@ header {
                display: none;
             }
             @media only screen and (min-width: $break-desktop){
-                margin-top:28vh;
+                margin-top:22vh;
             }
          h4 {
             font-family: $font-family;
@@ -736,8 +752,8 @@ header {
                 display: none;
             }
              @media only screen and (min-width: $break-desktop){
-             margin-bottom: 16vh;
-             margin-left: 30vh;
+             margin-bottom: 20vh;
+             margin-left: 20vh;
             }
          }   
         }
