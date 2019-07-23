@@ -24,6 +24,12 @@ time, mark, audio, video {
     overflow-x: hidden;
   }
 }
+@media screen and (min-width: 1441px) {
+  html {
+    Initial-scale: 0.6;
+    Maximun-scale: 0.6;
+  }
+}
 
 body {
   margin: 0px 0 0 0;
@@ -66,8 +72,8 @@ header {
 }
 header .logo {
   float: left;
-  margin-top: 20vh;
-  margin-left: 5%;
+  margin-top: 15vh;
+  margin-left: 4vh;
 }
 @media screen and (max-width: 700px) {
   header .logo {
@@ -75,38 +81,23 @@ header .logo {
     margin-left: 4vh;
   }
 }
-@media only screen and (min-width: 1442px) {
-  header .logo {
-    margin-top: 15vh;
-    margin-left: 4vh;
-  }
+header .logo img {
+  width: 25vw;
 }
 @media screen and (max-width: 700px) {
   header .logo img {
     width: 40vh;
   }
 }
-@media only screen and (min-width: 1442px) {
-  header .logo img {
-    width: 25vw;
-  }
-}
 header .desktopNav {
   font-family: "Source Sans Pro", sans-serif;
   display: inline-block;
-  font-size: 120%;
+  font-size: 110%;
   font-weight: 600;
   color: #6d6e70;
+  margin: 15vh 5vh 0 0;
   float: right;
-  margin-top: 20vh;
-  margin-right: 5vh;
   text-decoration: none;
-}
-@media only screen and (min-width: 1442px) {
-  header .desktopNav {
-    font-size: 110%;
-    margin: 15vh 5vh 0 0;
-  }
 }
 @media screen and (max-width: 700px) {
   header .desktopNav {
@@ -183,18 +174,12 @@ header .desktopNav .contact:hover {
 }
 .home .containerBox .medium-form {
   font-family: "Source Sans Pro", sans-serif;
-  width: 45%;
+  width: 50%;
   position: absolute;
   top: 15%;
-  left: 15vh;
+  left: 20vh;
   display: flex;
   align-content: space-evenly;
-}
-@media only screen and (min-width: 1442px) {
-  .home .containerBox .medium-form {
-    width: 50%;
-    left: 20vh;
-  }
 }
 @media screen and (max-width: 700px) {
   .home .containerBox .medium-form {
@@ -207,10 +192,10 @@ header .desktopNav .contact:hover {
   }
 }
 .home .containerBox .medium-form .abstract {
-  font-size: 150%;
+  font-size: 260%;
   position: absolute;
   line-height: 95%;
-  top: 10px;
+  top: 36px;
 }
 .home .containerBox .medium-form .abstract .bold {
   font-weight: bold;
@@ -224,23 +209,12 @@ header .desktopNav .contact:hover {
     text-align: center;
   }
 }
-@media only screen and (min-width: 1442px) {
-  .home .containerBox .medium-form .abstract {
-    font-size: 260%;
-    top: 36px;
-  }
-}
 .home .containerBox .medium-form form {
-  margin-top: 14vh;
+  margin-top: 25vh;
 }
 @media screen and (max-width: 700px) {
   .home .containerBox .medium-form form {
     margin-top: 126vh;
-  }
-}
-@media only screen and (min-width: 1442px) {
-  .home .containerBox .medium-form form {
-    margin-top: 25vh;
   }
 }
 .home .containerBox .medium-form form input.required {
@@ -249,7 +223,7 @@ header .desktopNav .contact:hover {
   font-size: 115%;
   border: 1px solid #c5c5c5;
   border-radius: 20px;
-  width: 80%;
+  width: 90%;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -267,20 +241,10 @@ header .desktopNav .contact:hover {
     padding: 15px;
   }
 }
-@media only screen and (min-width: 1442px) {
-  .home .containerBox .medium-form form input.required {
-    width: 90%;
-  }
-}
 .home .containerBox .medium-form form .checkboxBox {
   display: flex;
   align-content: space-between;
-  margin-top: 3vh;
-}
-@media only screen and (min-width: 1442px) {
-  .home .containerBox .medium-form form .checkboxBox {
-    margin-top: 10px;
-  }
+  margin-top: 10px;
 }
 @media screen and (max-width: 700px) {
   .home .containerBox .medium-form form .checkboxBox {
@@ -313,16 +277,11 @@ header .desktopNav .contact:hover {
   font-weight: bold;
 }
 .home .containerBox .medium-form form .clear {
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 @media screen and (max-width: 700px) {
   .home .containerBox .medium-form form .clear {
     margin-left: -24vh;
-  }
-}
-@media only screen and (min-width: 1442px) {
-  .home .containerBox .medium-form form .clear {
-    margin-top: 3vh;
   }
 }
 .home .containerBox .medium-form form .clear .btn {
@@ -368,14 +327,8 @@ header .desktopNav .contact:hover {
   min-width: 400px;
   position: absolute;
   z-index: 20;
-  margin-top: 18vh;
-  left: 80%;
-}
-@media screen and (min-width: 1442px) {
-  .medium-content {
-    margin-top: 19vh;
-    left: 85%;
-  }
+  margin-top: 19vh;
+  left: 85%;
 }
 @media screen and (max-width: 700px) {
   .medium-content {
@@ -389,12 +342,6 @@ header .desktopNav .contact:hover {
   width: 250%;
   height: 60vh;
 }
-@media screen and (min-width: 1442px) {
-  .medium-content iframe {
-    width: 250%;
-    height: 60vh;
-  }
-}
 @media screen and (max-width: 700px) {
   .medium-content iframe {
     width: 115vw;
@@ -405,13 +352,14 @@ header .desktopNav .contact:hover {
 .title {
   font-family: "Source Sans Pro", sans-serif;
   color: #f2a900;
-  font-size: 330%;
+  font-size: 400%;
   line-height: 110%;
   font-weight: bold;
   position: absolute;
   left: 20vh;
   width: 844px;
-  margin-top: -35vh;
+  margin-top: 63vh;
+  margin-left: -1vh;
   z-index: 100;
 }
 @media screen and (max-width: 700px) {
@@ -424,35 +372,16 @@ header .desktopNav .contact:hover {
     margin-top: 55vh;
   }
 }
-@media only screen and (min-width: 701px) {
-  .title {
-    font-size: 250%;
-    margin-top: -30vh;
-  }
-}
-@media only screen and (min-width: 1442px) {
-  .title {
-    font-size: 400%;
-    margin-top: 63vh;
-    margin-left: -1vh;
-  }
-}
 
 .miscelanea {
-  margin-top: 85vh;
-  margin-left: -105vh;
+  margin-left: -80vh;
+  margin-top: 84vh;
 }
 @media screen and (max-width: 700px) {
   .miscelanea {
     margin-top: 67vh;
     margin-left: -65%;
     width: 100vw;
-  }
-}
-@media only screen and (min-width: 1442px) {
-  .miscelanea {
-    margin-left: -80vh;
-    margin-top: 84vh;
   }
 }
 
@@ -684,13 +613,8 @@ header .desktopNav .contact:hover {
   position: absolute;
   z-index: 50;
   margin: 5% 0 0px 48%;
-  width: 75%;
+  width: 65%;
   float: right;
-}
-@media only screen and (min-width: 1442px) {
-  .secondSection .whatIs {
-    width: 65%;
-  }
 }
 .secondSection .whatIs h3 {
   font-family: "Source Sans Pro", sans-serif;
@@ -715,12 +639,7 @@ header .desktopNav .contact:hover {
 .secondSection .whatIs img.miscelanea {
   position: absolute;
   top: -30vh;
-  right: -20vh;
-}
-@media only screen and (min-width: 1442px) {
-  .secondSection .whatIs img.miscelanea {
-    right: -35vh;
-  }
+  right: -35vh;
 }
 @media screen and (max-width: 700px) {
   .secondSection .whatIs img.miscelanea {
@@ -767,14 +686,9 @@ header .desktopNav .contact:hover {
 .thirdSection .containerBoxes .miscelanea {
   position: absolute;
   transform: translate(20px, 83px);
-  width: 75%;
-}
-@media only screen and (min-width: 1442px) {
-  .thirdSection .containerBoxes .miscelanea {
-    width: 87%;
-    margin-left: 0vh;
-    margin: 2vh;
-  }
+  width: 87%;
+  margin-left: 0vh;
+  margin-top: 0vh;
 }
 @media screen and (max-width: 700px) {
   .thirdSection .containerBoxes .miscelanea {
@@ -872,16 +786,11 @@ header .desktopNav .contact:hover {
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
-  margin-top: 20vh;
+  margin-top: 22vh;
 }
 @media screen and (max-width: 700px) {
   .thirdSection .howDoes .reason {
     display: none;
-  }
-}
-@media only screen and (min-width: 1442px) {
-  .thirdSection .howDoes .reason {
-    margin-top: 22vh;
   }
 }
 .thirdSection .howDoes .reason h4 {
@@ -890,8 +799,8 @@ header .desktopNav .contact:hover {
   font-size: 195%;
   line-height: 105%;
   text-align: left;
-  margin-bottom: 16vh;
-  margin-left: 40vh;
+  margin-bottom: 20vh;
+  margin-left: 20vh;
 }
 .thirdSection .howDoes .reason h4 .bold {
   font-weight: bold;
@@ -904,12 +813,6 @@ header .desktopNav .contact:hover {
 @media screen and (max-width: 700px) {
   .thirdSection .howDoes .reason h4 {
     display: none;
-  }
-}
-@media only screen and (min-width: 1442px) {
-  .thirdSection .howDoes .reason h4 {
-    margin-bottom: 20vh;
-    margin-left: 20vh;
   }
 }
 .thirdSection .ultimateForm {
